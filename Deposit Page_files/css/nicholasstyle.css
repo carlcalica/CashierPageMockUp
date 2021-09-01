@@ -1,0 +1,1097 @@
+/*font face*/
+/*@font-face {
+  font-family: 'OpenSans';
+     src: url("./Deposit Page_files/fonts/OpenSansBold.eot");
+     src: url('./Deposit Page_files/fonts/OpenSansBold.eot?#iefix') format('embedded-opentype'),
+          url('./Deposit Page_files/fonts/OpenSansBold.woff') format('woff'),
+          url('./Deposit Page_files/fonts/OpenSansBold.woff2') format('woff2'),
+          url('./Deposit Page_files/fonts/OpenSansBold.ttf') format('truetype'),
+          url('./Deposit Page_files/fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+     src: url('./Deposit Page_files/fonts/OpenSansRegular.eot');
+     src: url('./Deposit Page_files/fonts/OpenSansRegular.eot?#iefix') format('embedded-opentype'),
+          url('./Deposit Page_files/fonts/OpenSansRegular.woff') format('woff'),
+          url('./Deposit Page_files/fonts/OpenSansRegular.woff2') format('woff2'),
+          url('./Deposit Page_files/fonts/OpenSansRegular.ttf') format('truetype'),
+          url('./Deposit Page_files/fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+  font-style: bold;
+}*/
+
+@font-face {
+   font-family: 'OpenSansBold';
+   src: url('./fonts/OpenSansBold.eot');
+   src: url('./fonts/OpenSansBold.eot') format('embedded-opentype'), 
+   url('./fonts/OpenSansBold.woff2') format('woff2'), 
+   url('./fonts/OpenSansBold.woff') format('woff'), 
+   url('../fonts/OpenSansBold.ttf') format('truetype'), 
+   url('./fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+}
+
+@font-face {
+   font-family: 'OpenSansRegular';
+   src: url('./fonts/OpenSansRegular.eot');
+   src: url('./fonts/OpenSansRegular.eot') format('embedded-opentype'), 
+   url('./fonts/OpenSansRegular.woff2') format('woff2'), 
+   url('./fonts/OpenSansRegular.woff') format('woff'), 
+   url('./fonts/OpenSansRegular.ttf') format('truetype'), 
+   url('./fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+
+/*main box*/
+.MainBox {
+    margin: 0px;
+    padding: 24px 30px 32px 24px;
+ }
+
+/*select deposit method*/
+.Select-deposit-method {
+    width: 183px;
+    height: 22px;
+    margin: 0 445px 24px 0;
+    font-family: 'OpenSansRegular' 'San-serif';
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+.SelDepositMethodBox {
+    height: 56px;
+    align-self: center;
+    flex-grow: 0;
+    background-color: var(--white);
+}
+
+#SelDepositMethodBox-a{
+  width: 110px;
+  margin: 0 8px 0 0;
+}
+
+#SelDepositMethodBox-b{
+  width: 108px;
+  padding: 0 8px 8px;
+}
+
+#SelDepositMethodBox-c{
+  width: 113px;
+  padding: 0 8px 8px;
+}
+
+#SelDepositMethodBox-d{
+  width: 115px;
+  padding: 0 8px 8px;
+}
+
+#SelDepositMethodBox-e{
+  width: 83px;
+  margin: 0 0 0 8px;
+  padding: 0 8px 8px;
+}
+
+.Vector {
+  width: 24px;
+  height: 24px;
+}
+
+#Vector1{
+  margin: 0 43px 4px;
+}
+
+#Vector2{
+  flex-grow: 0;
+  margin: 0 34px 4px;
+}
+
+#Vector3{
+  flex-grow: 0;
+  margin: 0 36.5px 4px;
+}
+
+#Vector4{
+  flex-grow: 0;
+  margin: 0 37.5px 4px;
+}
+
+#Vector5{
+  flex-grow: 0;
+  margin: 0 21.5px 4px;
+}
+
+.YellowBox {
+  width: 110px;
+  height: 2px;
+  align-self: center;
+  flex-grow: 0;
+  margin: 7px 0 0;
+  background-color: #ffcd00;
+}
+
+.SelDepositMethodBoxFrame {
+  width: 561.8px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 66.2px 16px 0;
+  padding: 0;
+}
+
+.Most-Popular {
+  width: 94px;
+  height: 19px;
+  flex-grow: 0;
+  margin: 4px 8px 7px;
+  font-family: 'OpenSansRegular' 'San-serif';
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.Bank-Transfer, .Online-Deposit, .Mobile-Deposit, .Cash-Card {
+  height: 20px;
+  flex-grow: 0;
+  margin: 4px 0 0;
+  font-family: 'OpenSansRegular' 'San-serif';
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.Bank-Transfer {
+    width: 92px;
+}
+
+.Online-Deposit {
+    width: 97px;
+}
+
+.Mobile-Deposit {
+    width: 99px;
+}
+
+.Cash-Card {
+    width: 67px;
+}
+
+/*mainframe*/
+.PaymentOptFrame {
+  width: 658px;
+  height: 572px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  margin: 16px -16px 16px;
+  padding: 0;  
+}
+
+/*1st payment option*/
+.CardPayment-option {
+  width: 198.3px;
+  height: 140px;
+  flex-grow: 0;
+}
+
+img.tagsRecommended {
+  width: 113px;
+  height: 16px;
+  flex-grow: 0;
+  margin: -30px 43.7px 0px 41.6px;
+  object-fit: contain;
+  border-radius: 2px;
+  background-color: #ffcd00;
+}
+
+/*paymentoptbox*/
+.PaymentOptBox{
+  width: 198.3px;
+  flex-grow: 0;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+#PaymentOptBox-a{
+  height: 132px;
+  margin: 8px 11.033px 8px 0;
+  padding: 0px 0 0;
+}
+
+#PaymentOptBox-b{
+  margin: 8px 5.5165px 8px;
+  padding: 12px 0 0;
+}
+
+#PaymentOptBox-c{
+  margin: 8px 0px 8px 11.033px;
+  padding: 12px 0 0;
+}
+
+#PaymentOptBox-d{
+  height: 128px;
+  margin: 8px 11.033px 8px 0;
+  padding: 12px 0 0;
+}
+
+#PaymentOptBox-e{
+  height: 128px;
+  margin: 8px 5.5165px 8px;
+  padding: 12px 0 0;
+}
+
+#PaymentOptBox-f{
+  height: 128px;
+  margin: 8px 0px 8px 11.033px;
+  padding: 12px 0 0;
+}
+
+#PaymentOptBox-g{
+  height: 128px;
+  margin: 8px 11.033px 8px 0;
+  padding: 12px 0 0;
+}
+
+#PaymentOptBox-h{
+  height: 128px;
+  margin: 8px 5.5165px 8px;
+  padding: 12px 0 0;
+}
+
+#PaymentOptBox-i{
+  height: 128px;
+  margin: 8px 0px 8px 11.033px;
+  padding: 12px 0 0;
+}
+
+#PaymentOptBox-j{
+  height: 128px;
+  margin: 8px 429.6px 0 0px;
+  padding: 12px 0 0;
+}
+
+/*innerframe1*/
+.InnerFrame1-a {
+  width: 120px;
+  height: 76px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: -12px 40.2px 4px 38.1px;
+  padding: 0;
+}
+
+.InnerFrame1-b1, .InnerFrame1-b2, .InnerFrame1-b3{
+  width: 116px;
+  height: 76px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.InnerFrame1-b1{
+  margin: 0 41.2px 7px;
+}
+
+.InnerFrame1-b2{
+  margin: 0 41.2px 5.5px 41.2px;
+}
+
+.InnerFrame1-b3{
+  margin: 0 41.2px 5.5px 41.2px;
+}
+
+.InnerFrame1-c1, .InnerFrame1-c2, .InnerFrame1-c3{
+  height: 40px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.InnerFrame1-c1{
+  width: 108px;
+  margin: 0 45.2px 14px 45.2px;
+}
+
+.InnerFrame1-c2{
+  width:120px;
+  margin: 0 39.2px 12px 39.2px;
+}
+
+.InnerFrame1-c3{
+  width:108px;
+  margin: 0 45.2px 12px 45.2px;
+}
+
+.InnerFrame1-d1, .InnerFrame1-d2{
+  width: 116px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.InnerFrame1-d1 {
+  height:80px; 
+  gap: 2px;
+  margin: 0 42.2px 0 40.2px;
+}
+
+.InnerFrame1-d2 {
+  height:76px; 
+  margin: 0 41.2px 5.5px 41.2px;
+  padding: 0;
+}
+
+/*innerframe2*/
+.InnerFrame2-a, .InnerFrame2-b{
+  height: 16px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+}
+
+.InnerFrame2-a {
+  width: 64px;
+}
+
+.InnerFrame2-b {
+  width: 84px;
+}
+
+/*deposittypebox*/
+.DepositTypeBox-a, .DepositTypeBox-b, .DepositTypeBox-c, .DepositTypeBox-d {
+  width: 198.3px;
+  height: 16px;
+  flex-grow: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.DepositTypeBox-a {
+  padding: 1px 63.7px 1px 63.7px;
+  background-color: #6a9436;
+}
+
+.DepositTypeBox-b {
+  padding: 1px 61.7px 1px 61.7px;
+  background-color: #ffcd00;
+}
+
+.DepositTypeBox-c {
+  padding: 1px 62.2px;
+  background-color: #bc1f00;
+}
+
+.DepositTypeBox-d {
+  padding: 1px 74.2px;
+  background-color: #1e619f;
+}
+
+/*duration*/
+#instantdeposit, #tenminutes{
+  height: 16px;
+  flex-grow: 0;
+  font-family: 'OpenSansRegular' 'San-serif';
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+#instantdeposit{
+    width: 72px;
+}
+
+#tenminutes{
+    width: 52px;
+}
+
+/*depositmethod*/
+#banktransfer, #mobiledeposit, #onlinedeposit, #cashcard{
+  flex-grow: 0;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white);
+}
+#banktransfer {
+  width: 71px;
+  color: var(--white);
+}
+#mobiledeposit {
+  width: 75px;
+  color: #000;
+}
+#onlinedeposit {
+  width: 74px;
+  color: var(--white);
+}
+#cashcard {
+  width: 50px;
+  color: var(--white);
+}
+
+/*paymentredtext*/
+.paymentredtext {
+  width: 166.3px;
+  height: 20px;
+  align-self: center;
+  flex-grow: 0;
+  margin: 4px 16.4px 4px 15.6px;
+  font-family: 'OpenSansRegular' 'San-serif';
+  font-size: 8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #bc1f00;
+}
+.paymentredtext2, .paymentredtext7 {
+  height: 13px;
+  align-self: center;
+  flex-grow: 0;
+  font-family: 'OpenSansRegular' 'San-serif';
+  font-size: 8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: center;
+  color: #bc1f00;
+}
+
+.paymentredtext2 {
+  width: 158px;
+  margin: 0px 20.7px 8px 19.7px;
+}
+
+.paymentredtext7 {
+  width: 152px;
+  margin: 0px 23.7px 5.5px 22.7px;
+}
+
+.paymentredtext4, .paymentredtext5, .paymentredtext6, .paymentredtext9{
+  width: 88px;
+  height: 13px;
+  align-self: center;
+  flex-grow: 0;
+  font-family: 'OpenSansRegular' 'San-serif';
+  font-size: 8px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: center;
+  color: #bc1f00;
+}
+.paymentredtext4, .paymentredtext5 {
+  margin: 5.5px 55.7px 5.5px 54.7px;
+}
+.paymentredtext6 {
+  margin: 1.5px 56.7px 5.5px 53.7px;
+}
+.paymentredtext9 {
+  margin: 1.5px 55.7px 5.5px 54.7px;
+}
+
+/*depositmethod brands*/
+img.paymentsFooter_QuickTransferEN_PaymentMethod_Colo {
+    width: 120px;
+    height: 24px;
+    flex-grow: 0;
+    object-fit: contain;
+}
+
+img.paymentsFooter_NinePay_PaymentMethod_Colored, img.paymentsFooter_PayTrust88_PaymentMethod_Colored,
+img.paymentsFooter_FastPay_PaymentMethod_Colored,img.paymentsFooter_WealthPay_PaymentMethod_Colored,
+img.paymentsFooter_GoATM_PaymentMethod_Colored,img.paymentsFooter_OnlinePayCN_PaymentMethod_Colored,
+img.paymentsFooter_ExpressPayCN_PaymentMethod_Colored  {
+    width: 108px;
+    height: 24px;
+    flex-grow: 0;
+    object-fit: contain;
+}
+
+img.paymentsFooter_MOnline_PaymentMethod_Colored {
+  width: 90px;
+  height: 24px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+
+img.paymentsFooter_QuickPay_PaymentMethod_Colored {
+  width: 120px;
+  height: 24px;
+  flex-grow: 0;
+  object-fit: contain;
+}
+
+/*deposit limit text*/
+.MMCNY,.MMCNY-c1,.MMCNY-c2 {
+    width: 116px;
+    height: 36px;
+    align-self: center;
+    flex-grow: 0;
+    font-family: 'OpenSansRegular' 'San-serif';
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+}
+  
+.MMCNY .text-style-1,.MMCNY-c1 .text-style-1,.MMCNY-c2 .text-style-1,
+.MMCNY .text-style-2,.MMCNY-c1 .text-style-2,.MMCNY-c2 .text-style-2  {
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.MMCNY-c1 {
+  margin: 14px 41.2px 14px 41.2px;
+}
+
+.MMCNY-c2 {
+  margin: 12px 41.2px 12px 41.2px;
+}
+
+.NoLimit {
+  width: 116px;
+  height: 36px;
+  flex-grow: 0;
+  font-family: 'OpenSansRegular' 'San-serif';
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  position: relative;
+  color: #000;
+}
+
+.NoLimit p{
+  left: 50%;
+  top:50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+  @media only screen and (max-width: 575px) {
+    /*main box*/
+    .MainBox {
+      width: 375px;
+      height: 881px;
+      margin: 5px 515px 48px 10px;
+      padding: 32px 14.8px 32px 16.2px;
+      border: solid 1px #d2e3ec;
+      background-color: var(--white); 
+    }
+    
+    /*Select deposit method*/
+    .Select-deposit-method {
+      width: 160px;
+      height: 19px;
+      font-family: 'OpenSansRegular' 'San-serif';
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000;
+    }
+
+    .SelDepositMethodBox {
+      height: 64px;
+      align-self: center;
+      flex-grow: 0;
+      background-color: var(--white);
+    }
+
+    #SelDepositMethodBox-a{
+      width: 96px;
+      margin: 0 16px 0 0;
+    }
+    
+    #SelDepositMethodBox-b{
+      width: 95px;
+      margin: 0 16px;
+      padding: 0 8px 10px;
+    }
+    
+    #SelDepositMethodBox-c{
+      width: 100px;
+      margin: 0 16px;
+      padding: 0 8px 10px;
+    }
+    
+    #SelDepositMethodBox-d{
+      width: 115px;
+      padding: 0 8px 8px;
+    }
+    
+    #SelDepositMethodBox-e{
+      width: 83px;
+      margin: 0 0 0 8px;
+      padding: 0 8px 8px;
+    }
+
+    .Vector {
+      width: 32px;
+      height: 32px;
+    }
+  
+    #Vector1{
+      margin: 0 30.8px 4px 33.3px;
+      padding: 4.7px 4px 4.7px;
+    }
+  
+    #Vector2{
+      flex-grow: 0;
+      margin: 0 23.5px 4px;
+      padding: 4.3px 0.8px 4.5px 0.8px;
+    }
+  
+    #Vector3{
+      flex-grow: 0;
+      margin: 0 26px 4px;
+      padding: 2.2px 2.2px 1.9px 2.1px;
+    }
+  
+    #Vector4{
+     flex-grow: 0;
+     margin: 0 37.5px 4px;
+    }
+  
+    #Vector5{
+     flex-grow: 0;
+     margin: 0 21.5px 4px;
+    }
+  
+    .SelDepositMethodBoxFrame {
+      width: 359px;
+      height: 64px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+      margin: 11px 0 24px 16px;
+      padding: 0;
+    }
+
+    .YellowBox {
+      width: 96px;
+      height: 4px;
+      align-self: center;
+      flex-grow: 0;
+      margin: 8px 0 0;
+      background-color: #ffcd00;
+    }
+
+    .Most-Popular {
+      width: 80px;
+      height: 16px;
+      flex-grow: 0;
+      margin: 4px 6.8px 8px 9.3px;
+      font-family: 'OpenSansRegular' 'San-serif';
+      font-size: 12px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000;
+    }
+    
+    .Bank-Transfer, .Online-Deposit, .Mobile-Deposit, .Cash-Card{
+      width: 79px;
+      height: 18px;
+      flex-grow: 0;
+      margin: 4px 0 0;
+      font-family: 'OpenSansRegular' 'San-serif';
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000;
+    }
+    
+    .Bank-Transfer {
+        width: 79px;
+    }
+    
+    .Online-Deposit {
+        width: 84px;
+    }
+    
+    .Mobile-Deposit {
+        width: 99px;
+    }
+    
+    .Cash-Card {
+        width: 67px;
+    }
+
+    /*mainframe*/
+    .PaymentOptFrame {
+      width: 374.5px;
+      height: 686px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+      margin: 24px -16px 32px;
+      padding: 0;
+    }
+
+    /*1st payment option*/
+    .CardPayment-option {
+      width: 164px;
+      height: 134px;
+      flex-grow: 0;
+      padding: 6px 0px 0px;
+    }
+
+    img.tagsRecommended {
+      width: 72px;
+      height: 12px;
+      flex-grow: 0;
+      margin: -30px 45.5px 2px 46.5px;
+      padding: 0 4px 1px;
+      object-fit: contain;
+      border-radius: 2px;
+      background-color: #ffcd00;
+    }
+
+    /*rectangle326*/
+    .PaymentOptBox{
+      width: 164px;
+      flex-grow: 0;
+      border-radius: 10px;
+      background-color: #f2f2f2;
+    }
+    
+    #PaymentOptBox-a{
+      height: 128px;
+      margin: 6px 0px 8px 0;
+    }
+    
+    #PaymentOptBox-b{
+      height: 128px;
+      margin: 12px 0px 8px 8.25px;
+    }
+    
+    #PaymentOptBox-c{
+      height: 122px;
+      margin: 8px 0px 8px 0;
+      padding: 8px 0 0;
+    }
+    
+    #PaymentOptBox-d{
+      height: 122px;
+      margin: 8px 0px 8px 8.25px;
+      padding: 8px 0 0;
+    }
+    
+    #PaymentOptBox-e{
+      height: 122px;
+      margin: 8px 0px 8px 0;
+      padding: 8px 0 0;
+    }
+    
+    #PaymentOptBox-f{
+      height: 122px;
+      margin: 8px 0px 8px 8.25px;
+      padding: 8px 0 0;
+    }
+    
+    #PaymentOptBox-g{
+      height: 122px;
+      margin: 8px 0px 8px 0;
+      padding: 8px 0 0;
+    }
+    
+    #PaymentOptBox-h{
+      height: 122px;
+      margin: 8px 0px 8px 8.25px;
+      padding: 8px 0 0;
+    }
+    
+    #PaymentOptBox-i{
+      height: 122px;
+      margin: 8px 0px 8px 0;
+      padding: 8px 0 0;
+    }
+    
+    #PaymentOptBox-j{
+      height: 122px;
+      margin: 8px 429.6px 0 8.25px;
+      padding: 8px 0 0;
+    }
+
+    /*frame1444*/
+    .InnerFrame1-a {
+      width: 148px;
+      height: 76px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin: -16px 7.5px 4px 8.5px;
+      padding: 0;
+    }
+
+    .InnerFrame1-b {
+      width: 116px;
+      height: 76px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .InnerFrame1-b1{
+      margin: -4px 24px 8px;
+    }
+    
+    .InnerFrame1-b2{
+      margin: 0 24px 3.5px;
+    }
+    
+    .InnerFrame1-b3{
+      margin: 0 24px 4px;
+    }
+
+    .InnerFrame1-c1,  .InnerFrame1-c2, .InnerFrame1-c3{
+      height: 40px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .InnerFrame1-c1, .InnerFrame1-c3{
+      width: 108px;
+      margin: 0 28px 8px;
+    }
+
+    .InnerFrame1-c2{
+      width:120px;
+      margin: 0 22px 8px;
+    }
+
+    .InnerFrame1-d {
+      width: 116px;
+      height: 76px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 24px 4px;
+      padding: 0;
+    }
+
+    .InnerFrame1-d1, .InnerFrame1-d2 {
+      width: 116px;
+      height: 76px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0 24px 4px;
+      padding: 0;
+    }
+
+    /*rectangle328*/
+    .DepositTypeBox-a, .DepositTypeBox-b, .DepositTypeBox-c, .DepositTypeBox-d {
+      width: 164px;
+      height: 16px;
+      flex-grow: 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    
+    .DepositTypeBox-a {
+      padding: 1px 46.5px;
+      background-color: #6a9436;
+    }
+    
+    .DepositTypeBox-b {
+      padding: 1px 44.5px;
+      background-color: #ffcd00;
+    }
+    
+    .DepositTypeBox-c {
+      padding: 1px 45px;
+      background-color: #bc1f00;
+    }
+    
+    .DepositTypeBox-d {
+      padding: 1px 57px;
+      background-color: #1e619f;
+    }
+
+    /*paymentredtext*/
+    .paymentredtext {
+      width: 152px;
+      height: 18px;
+      align-self: center;
+      flex-grow: 0;
+      margin: 4px 5.8px 6px 6.3px;
+      font-family: 'OpenSansRegular' 'San-serif';
+      font-size: 8px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: center;
+      color: #bc1f00;
+    }
+
+    .paymentredtext2, .paymentredtext7 {
+      width: 152px;
+      height: 12px;
+      align-self: center;
+      flex-grow: 0;
+      font-family: 'OpenSansRegular' 'San-serif';
+      font-size: 8px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.6;
+      letter-spacing: normal;
+      text-align: center;
+      color: #bc1f00;
+    }
+  
+    .paymentredtext2 {
+      margin: 0px 6px 8px;
+    }
+  
+    .paymentredtext7 {
+      margin: 0px 6.5px 6px 5.5px;
+    }
+
+    .paymentredtext4, .paymentredtext5, .paymentredtext6, .paymentredtext9{
+      width: 88px;
+      align-self: center;
+      flex-grow: 0;
+      font-family: 'OpenSansRegular' 'San-serif';
+      font-size: 8px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.6;
+      letter-spacing: normal;
+      text-align: center;
+      color: #bc1f00;
+    }
+
+    .paymentredtext4 {
+      height: 13px;
+      margin: 3.5px 38px 5.5px;
+    }
+
+    .paymentredtext5, .paymentredtext6, .paymentredtext9{
+      height: 12px;
+      margin: 4px 38.5px 6px 37.5px;
+    }
+
+    /*depositlimittext*/
+    .MMCNY,.MMCNY-c1,.MMCNY-c2 {
+      width: 116px;
+      height: 36px;
+      align-self: center;
+      flex-grow: 0;
+      font-family: 'OpenSansRegular' 'San-serif';
+      font-size: 12px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000;
+    }
+    
+    .MMCNY .text-style-1,.MMCNY-c1 .text-style-1,.MMCNY-c2 .text-style-1 {
+      font-weight: normal;
+      line-height: 1.5;
+    }
+  
+    .MMCNY .text-style-2,.MMCNY-c1 .text-style-2,.MMCNY-c2 .text-style-2 {
+      font-weight: normal;
+      line-height: 1.5;
+    }
+  
+    .MMCNY-c1 {
+      margin: 8px 24px 13px;
+    }
+  
+    .MMCNY-c2 {
+      margin: 8px 24px 14px;
+    }
+
+  }
+  

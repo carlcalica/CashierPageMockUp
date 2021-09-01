@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Deposit</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/nicholasstyle.css">
+       
+    <!-- JS -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+
+</head>
+    <body id="changeFontBody">
+        <div class="MainBox">
+            <span class="Select-deposit-method">Select deposit method:</span>
+            <div class="SelDepositMethodBoxFrame">
+               <div class="SelDepositMethodBox" id="SelDepositMethodBox-a">
+                   <div class="Vector" id="Vector1">
+                       <img src="images/icons/icon-caret-double-dark-up.svg"style="max-width: 100%;max-height: 100%;">
+                   </div>
+                   <div class="Most-Popular">Most Popular</div>
+                   <div class="YellowBox"></div>
+               </div>
+               <div class="SelDepositMethodBox" id="SelDepositMethodBox-b">
+                   <div class="Vector" id="Vector2">
+                       <img src="images/icons/icon-bank-dark.svg"style="max-width: 100%;max-height: 100%;">
+                   </div>
+                   <div class="Bank-Transfer">Bank Transfer</div>
+               </div>
+               <div class="SelDepositMethodBox" id="SelDepositMethodBox-c">
+                   <div class="Vector" id="Vector3">
+                       <img src="images/icons/icon-globe-dark.svg"style="max-width: 100%;max-height: 100%;">
+                   </div>
+                   <div class="Online-Deposit">Online Deposit</div>
+               </div>      
+               <div class="SelDepositMethodBox" id="SelDepositMethodBox-d">
+                   <div class="Vector" id="Vector4">
+                       <img src="images/icons/icon-mobile-dark.svg"style="max-width: 100%;max-height: 100%;">
+                   </div>
+                   <div class="Mobile-Deposit">Mobile Deposit</div>
+               </div>
+               <div class="SelDepositMethodBox" id="SelDepositMethodBox-e">
+                   <div class="Vector" id="Vector5">
+                       <img src="images/icons/icon-ccard-dark.svg"style="max-width: 100%;max-height: 100%;">
+                   </div>
+                   <div class="Cash-Card">Cash Card</div>
+               </div>
+            </div>
+            <!--<div class="container">-->
+            <div class="PaymentOptFrame">
+                   <div class=" col-md-12 col-sm-12 col-12">
+                      <div class="row no-gutters">
+                          <div class="col-md-4 col-sm-4 col-6">
+                              <div class="CardPayment-option">
+                                  <div class="PaymentOptBox" id="PaymentOptBox-a">
+                                         <img src="images/vendors/tags_Recommended.svg"class="tagsRecommended">
+                                         <div class="InnerFrame1-a">
+                                             <img src="images/vendors/logo-deposit-quicktransfer.svg" class="paymentsFooter_QuickTransferEN_PaymentMethod_Colo"> 
+                                             <div class="InnerFrame2-a">
+                                                      <img src="images/icons/icon-timer.svg"/> 
+                                              <span id="tenminutes">10 Minutes</span>
+                                             </div>
+                                             <div class="MMCNY">
+                                              <span class="text-style-1">Min</span> CNY 100 <br>
+                                              <span class="text-style-2">Max</span> CNY 50,000
+                                             </div>
+                                         </div>  
+                                         <div class="paymentredtext">
+                                             * ATM, CDM, Mobile Banking, Internet 
+                                             <br> Banking, Counter-teller
+                                         </div>
+                                         <div class="DepositTypeBox-a">
+                                             <div id="banktransfer">Bank Transfer</div>
+                                         </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-6">
+                              <div class="PaymentOptBox" id="PaymentOptBox-b">
+                                  <div class="InnerFrame1-b1">
+                                      <img src="images/vendors/logo-ninepay.svg"class="paymentsFooter_NinePay_PaymentMethod_Colored">
+                                      <div class="InnerFrame2-a">
+                                                  <img src="images/icons/icon-timer.svg"/> 
+                                          <span id="tenminutes">10 Minutes</span>
+                                      </div>
+                                      <span class="MMCNY">
+                                          <span class="text-style-1">Min</span> CNY 100 <br>
+                                          <span class="text-style-2">Max</span> CNY 50,000
+                                      </span>
+                                  </div>   
+                                  <div class="paymentredtext2">* ATM, Mobile Banking, Internet Banking</div>
+                                  <div class="DepositTypeBox-a">
+                                      <div id="banktransfer">Bank Transfer</div>
+                                  </div> 
+                                 </div>                                     
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-6">
+                              <div class="PaymentOptBox" id="PaymentOptBox-c">
+                                  <div class="InnerFrame1-c1">
+                                      <img src="images/vendors/logo-paytrust.svg"class="paymentsFooter_PayTrust88_PaymentMethod_Colored">
+                                      <div class="InnerFrame2-b">
+                                                  <img src="images/icons/icon-timer.svg"/> 
+                                          <span id="instantdeposit">Instant Deposit</span>
+                                      </div>
+                                  </div>
+                                  <div class="MMCNY-c1">  
+                                          <span class="text-style-1">Min</span> CNY 100 <br>
+                                          <span class="text-style-2">Max</span> CNY 50,000
+                                  </div>
+                                  <div class="DepositTypeBox-b">
+                                      <div id="mobiledeposit">Mobile Deposit</div>
+                                  </div>        
+                             </div>                                        
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-6">
+                              <div class="PaymentOptBox" id="PaymentOptBox-d">
+                                  <div class="InnerFrame1-b2">
+                                     <img src="images/vendors/logo-fastpay.svg"class="paymentsFooter_FastPay_PaymentMethod_Colored">
+                                     <div class="InnerFrame2-b">
+                                              <img src="images/icons/icon-timer.svg"/> 
+                                      <span id="instantdeposit">Instant Deposit</span>
+                                     </div>
+                                     <span class="MMCNY">
+                                       <span class="text-style-1">Min</span> CNY 100 <br>
+                                       <span class="text-style-2">Max</span> CNY 50,000
+                                     </span>
+                                  </div>
+                                  <div class="paymentredtext4">* Only Internet Banking</div>
+                                  <div class="DepositTypeBox-c">
+                                      <div id="onlinedeposit">Online Deposit</div>
+                                  </div>
+                                 </div>                                                     
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-6">
+                              <div class="PaymentOptBox" id="PaymentOptBox-e">
+                                  <div class="InnerFrame1-b3">
+                                      <img src="images/vendors/logo-wealthpay.svg"class="paymentsFooter_WealthPay_PaymentMethod_Colored">
+                                      <div class="InnerFrame2-b">
+                                                  <img src="images/icons/icon-timer.svg"/> 
+                                          <span id="instantdeposit">Instant Deposit</span>
+                                      </div>
+                                      <span class="MMCNY">
+                                          <span class="text-style-1">Min</span> CNY 100 <br>
+                                          <span class="text-style-2">Max</span> CNY 50,000
+                                      </span>
+                                  </div>
+                                  <div class="paymentredtext5">* Only Internet Banking</div>
+                                  <div class="DepositTypeBox-c">
+                                      <div id="onlinedeposit">Online Deposit</div>
+                                  </div>
+                                 </div>                                
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-6">
+                              <div class="PaymentOptBox" id="PaymentOptBox-f">
+                                  <div class="InnerFrame1-d1">
+                                      <img src="images/vendors/logo-monline.svg"class="paymentsFooter_MOnline_PaymentMethod_Colored">
+                                      <div class="InnerFrame2-b">
+                                                  <img src="images/icons/icon-timer.svg"/> 
+                                          <span id="instantdeposit">Instant Deposit</span>
+                                      </div>
+                                      <div class="NoLimit"><p>No Limit</p></div>
+                                  </div>
+                                  <div class="paymentredtext6">* Only Internet Banking</div>
+                                  <div class="DepositTypeBox-c">
+                                      <div id="onlinedeposit">Online Deposit</div>
+                                  </div>  
+                                 </div>                                                
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-6">
+                              <div class="PaymentOptBox" id="PaymentOptBox-g">
+                                  <div class="InnerFrame1-d2">
+                                      <img src="images/vendors/logo-goatm.svg" class="paymentsFooter_GoATM_PaymentMethod_Colored">
+                                      <div class="InnerFrame2-b">
+                                                  <img src="images/icons/icon-timer.svg"/> 
+                                          <span id="instantdeposit">Instant Deposit</span>
+                                      </div>
+                                      <div class="NoLimit"><p>No Limit</p></div>                     
+                                  </div>    
+                                  <div class="paymentredtext7">* ATM, Mobile Banking, Internet Banking</div>
+                                  <div class="DepositTypeBox-d">
+                                     <div id="cashcard">Cash Card</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-6">
+                              <div class="PaymentOptBox" id="PaymentOptBox-h">
+                                  <div class="InnerFrame1-c2">
+                                      <img src="images/vendors/logo-quickpay.svg" class="paymentsFooter_QuickPay_PaymentMethod_Colored">
+                                      <div class="InnerFrame2-b">
+      
+                                                  <img src="images/icons/icon-timer.svg"/> 
+      
+                                          <span id="instantdeposit">Instant Deposit</span>
+                                      </div>
+                                  </div>   
+                                  <div class="MMCNY-c2">  
+                                      <span class="text-style-1">Min</span> CNY 100 <br>
+                                      <span class="text-style-2">Max</span> CNY 50,000
+                                  </div>
+                                  <div class="DepositTypeBox-b">
+                                      <div id="mobiledeposit">Mobile Deposit</div>
+                                  </div>     
+                              </div>                                     
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-6">
+                              <div class="PaymentOptBox" id="PaymentOptBox-i">
+                                  <div class="InnerFrame1-d2">
+                                      <!-- svg -->
+                                      <img src="images/vendors/logo-onlinepay.svg" class="paymentsFooter_OnlinePayCN_PaymentMethod_Colored">
+                                      <div class="InnerFrame2-b">
+                                          <img src="images/icons/icon-timer.svg"/> 
+                                          <span id="instantdeposit">Instant Deposit</span>
+                                      </div>
+                                      <div class="NoLimit"><p>No Limit</p></div>
+                                  </div>        
+                                  <div class="paymentredtext9">* Only Internet Banking</div>
+                                  <div class="DepositTypeBox-c">
+                                      <div id="onlinedeposit">Online Deposit</div>
+                                  </div>
+                              </div>                                        
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-6">
+                              <div class="PaymentOptBox" id="PaymentOptBox-j">
+                                  <div class="InnerFrame1-c3">
+                                    <img src="images/vendors/logo-deposit-expresspay-zh.svg"class="paymentsFooter_ExpressPayCN_PaymentMethod_Colored">
+                                    <div class="InnerFrame2-b">
+                                             <img src="images/icons/icon-timer.svg"/> 
+                                      <span id="instantdeposit">Instant Deposit</span>
+                                    </div>
+                                  </div>      
+                                  <div class="MMCNY-c2">  
+                                    <span class="text-style-1">Min</span> CNY 100 <br>
+                                    <span class="text-style-2">Max</span> CNY 50,000
+                                  </div>  
+                                  <div class="DepositTypeBox-b">
+                                    <div id="mobiledeposit">Mobile Deposit</div>
+                                  </div>
+                                 </div>                                
+                          </div>
+                      </div>
+                   </div>
+            </div>
+            <!--</div>-->
+       </div>        
+    </body>
+</html>

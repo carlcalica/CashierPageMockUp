@@ -1,0 +1,3324 @@
+﻿@charset "utf-8";
+.container {
+	background-color: #f5f5f6;
+	color: #000;
+}
+.container .inner-box {
+	padding: 0;
+	max-width: 890px;
+}
+.container .cashier-nav {
+	background-color: #fff;
+	margin-bottom: 16px;
+}
+.container .cashier-nav .icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 32px;
+	height: 32px;
+	margin-bottom: 5px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 0 center, 999px center;
+}
+.container .cashier-nav li.active .icon {
+	background-position: 999px center, 0 center;
+}
+    .container .cashier-nav .icon-wallet {
+        background-image: url('wwwroot/images/m88/icon/icon-wallet-blue.svg'), url('wwwroot/images/m88/icon/icon-wallet.svg');
+    }
+    .container .cashier-nav .icon-purse {
+        background-image: url(wwwroot/images/m88/icons/icon-purse-blue.svg), url(wwwroot/images/m88/images/icons/icon-purse.svg);
+    }
+    .container .cashier-nav .icon-account {
+        background-image: url(wwwroot/images/m88/images/icons/icon-account-blue.svg), url(wwwroot/images/m88/images/icons/icon-account-dark.svg);
+    }
+    .container .cashier-nav .icon-file {
+        background-image: url(wwwroot/images/m88/images/icons/icon-file-blue.svg), url(wwwroot/images/m88/images/icons/icon-file.svg);
+    }
+.container .cashier-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+.container .cashier-nav li {
+	width: 25%;
+}
+.container .cashier-nav a {
+	display: block;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.container .cashier-nav li.active a {
+	border-bottom: 2px solid #ffcd00;
+}
+.container .cashier-nav a .inner {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	font-size: 0;
+}
+.container .cashier-nav a .inner img {
+	max-height: 32px;
+	margin-bottom: 5px;
+}
+.container .cashier-nav a .inner span {
+	display: block;
+	font-size: 14px;
+	line-height: 19px;
+	color: #314060;
+	font-family: 'OpenSansBold';
+}
+.inner-content.row {
+	height: 100%;
+	padding-top: 20px;
+	padding-bottom: 48px;
+	font-size: 0;
+}
+.inner-content > .col {
+	font-size: 12px;
+}
+.inner-content > .col-1 {
+	display: inline-block;
+	vertical-align: top;
+    width: 200px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.inner-content > .col-2 {
+	display: inline-block;
+	vertical-align: top;
+    width: calc(100% - 200px);
+}
+.ledger-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.ledger-title {
+	cursor: pointer;
+	text-align: left;
+	font-size: 13px;
+	background-color: #1A2332;
+	color: #FFF;
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 8px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	font-family: avantgardecedemi;
+	font-weight: 500;
+}
+.ledger-title .hide-details {
+	content: "Hide Details";
+	display: inline-block;
+	position: absolute;
+	right: 35px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-family: avantgardecebook;
+	text-decoration: underline;
+}
+    .ledger-title:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        font-family: avantgardecebook;
+        text-decoration: underline;
+        height: 30px;
+        width: 35px;
+        background-image: url(wwwroot/images/m88/cashier/icon-dropdown-collapse-white.svg);
+        background-repeat: no-repeat;
+        background-size: 16px auto;
+        background-position: right 10px center;
+        transform: translateY(-50%) rotate(180deg);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        transform-origin: 50% 50%;
+    }
+.ledger-title.in-active:after {
+	transform: translateY(-50%) rotate(0deg);
+}
+.ledger-table th, .ledger-table td {
+	text-align: center;
+	font-size: 11px;
+	height: 30px;
+	vertical-align: middle;
+	padding: 0 8px;
+	box-sizing: border-box;
+}
+.ledger-table th {
+	background-color: #314060;
+	color: #FFF;
+	font-family: avantgardecedemi;
+	font-weight: 500;
+}
+.ledger-table td {
+	background-color: #D4E5ED;
+	border-right: 1px solid #FFF;
+	color: #000;
+}
+.ledger-table tr:not(:last-child) td {
+	border-bottom: 1px solid #FFF;
+}
+.ledger-table .status {
+	color: #379352;
+	font-family: avantgardecedemi;
+	font-weight: 500;
+	text-decoration: underline;
+}
+.ledger-table .hlu-red {
+	color: #be0002;
+	text-decoration: underline;
+	font-family: avantgardecedemi;
+	font-weight: 500;
+}
+.ledger-table .hlu-black {
+	color: #1a2430;
+	text-decoration: underline;
+	font-family: avantgardecedemi;
+	font-weight: 500;
+}
+.sidebar-wallets {
+	font-family: 'avantgardecebook';
+}
+.sidebar-wallets strong {
+	display: block;
+	text-align: left;
+	font-size: 13px;
+	background-color: #1A2332;
+	color: #FFF;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 8px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	position: relative;
+	font-family: 'avantgardecedemi';
+}
+.sidebar-wallets .odd {
+	background-color: #D4E5ED;
+}
+.sidebar-wallets .even {
+	background-color: #EAF4F8;
+}
+.sidebar-wallets .wallet-currency {
+	font-weight: 500;
+}
+.sidebar-wallets .toggle-parent {
+	cursor: pointer;
+}
+    .sidebar-wallets.gwallet .toggle-parent:after {
+        background-image: url(wwwroot/images/m88/cashier/icon-dropdown-collapse-white.svg);
+    }
+.sidebar-wallets .toggle-parent.in-active:after {
+	transform: translateY(-50%) rotate(0deg);
+}
+.sidebar-wallets.gwallet strong {
+	background-color: #314060;
+}
+.sidebar-wallets.gwallet strong .icon {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.sidebar-wallets.gwallet strong .icon {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%) rotate(0deg);
+	transition: transform 300ms;
+}
+.sidebar-wallets.gwallet strong.active .icon {
+	transform: translateY(-50%) rotate(-180deg);
+}
+.sidebar-wallets .dt .icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 4px;
+}
+.sidebar-wallets .dt, .sidebar-wallets .dd {
+	margin: 0;
+	padding: 0 8px;
+	height: 25px;
+	line-height: 25px;
+	position: relative;
+}
+.sidebar-wallets .dt span, .sidebar-wallets .dd span {
+	vertical-align: middle;
+}
+.sidebar-wallets .dt .txt-small, .sidebar-wallets .dd .txt-small {
+	font-size: 8px;
+}
+.sidebar-wallets > .dt {
+	background-color: #EAF4F8;
+}
+.sidebar-wallets  > .dd {
+	background-color: #EAF4F8;
+}
+.sidebar-wallets > .dt:nth-child(1n):nth-child(4n+1) {
+	background-color: #D4E5ED;
+}
+.sidebar-wallets > .dd:nth-child(1n):nth-child(4n+2) {
+	background-color: #D4E5ED;
+}
+.sidebar-wallets .dd {
+	text-align: right;
+	font-family: avantgardecedemi;
+	font-weight: 500;
+	font-size: 15px;
+	margin-bottom: 1px;
+}
+.sidebar-wallets .dl {
+	background: #FFF;
+}
+.sidebar-wallets .sub-inner-box {
+	background-color: #fff;
+}
+.sidebar-wallets.mwallet .sub-inner-box .dd:not(:last-child):after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	width: 90%;
+	height: 2px;
+	background: #1a2332;
+}
+.sidebar-wallets.gwallet .sub-inner-box .dt {
+    height: 40px;
+    line-height: 40px;
+}
+.sidebar-wallets .acc-btn {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-color: #1a2332;
+	line-height: 9px;
+	border-radius: 999px;
+	margin-left: 5px;
+	text-align: center;
+}
+.sidebar-wallets .acc-btn:before {
+	content: "+";
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 9px;
+	line-height: 9px;
+	font-family: arial;
+}
+.sidebar-wallets .acc-btn.active:before {
+	content: "-";
+}
+.tab-content {
+	/*display: none;*/
+	background: #FFF;
+	margin: 0;
+    padding: 0;
+	counter-reset: list-counter;
+	padding: 30px;
+	border: 1px solid #D4E5ED;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.tab-content strong {
+	font-weight: 500;
+}
+.tab-content.active {
+	display: block;
+}
+.tab-content ol.breadcrumbs {
+	margin: -20px 0 20px;
+	padding: 0;
+	border-bottom: 1px dotted #939498;
+}
+.tab-content ol.breadcrumbs li {
+	display: table-cell;
+	vertical-align: middle;
+	text-transform: uppercase;
+	padding: 0 10px;
+	box-sizing: border-box;
+	height: 45px;
+	position: relative;
+	color: #939498;
+	font-family: avantgardecedemi;
+	font-weight: 500;
+}
+.tab-content ol.breadcrumbs li:before {
+	counter-increment: list-counter;
+	content: counter(list-counter) ". ";
+}
+.tab-content ol.breadcrumbs li:not(:last-child):after {
+	background-color: #939498;
+	width: 1px;
+	content: "";
+	height: 50%;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.tab-content ol.breadcrumbs li.active {
+	color: #1b2232;
+}
+.tab-content .list-content strong {
+	color: #1b2232;
+}
+.tab-content table {
+	width: 100%;
+}
+.tab-content table td {
+	padding: 10px 15px 10px 0;
+	padding-right: 15px;
+}
+.tab-content table td:first-child {
+	font-weight: 500 !important;
+	width: 1%;
+	white-space: nowrap;
+}
+.tab-content table td:first-child * {
+	font-weight: 500;
+}
+.tab-content select, .tab-content input[type="text"], .tab-content .dropdown-box .dropdown-selected  {
+	display: inline-block;
+	vertical-align: middle;
+	height: 30px;
+	line-height: 30px;
+	box-sizing: border-box;
+	max-width: 312px;
+	width: 100%;
+	border: 1px solid #d5e6f0;
+	padding: 0px 10px;
+}
+.tab-content input[type="text"].invalid, .tab-content .dropdown-box .dropdown-selected.invalid  {
+	border: 1px solid #be0002;
+}
+.tab-content input[type="text"].invalid + .validation-txt, .tab-content .dropdown-box .dropdown-selected.invalid + .validation-txt {
+	position: relative;
+	background: #be0002;
+	color: #FFF;
+	font-size: 11px;
+	max-width: 312px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.tab-content input[type="text"].invalid + .validation-txt:after, .tab-content .dropdown-box .dropdown-selected.invalid + .validation-txt:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-width: 0px 6px 5px;
+    border-style: solid;
+    border-color: transparent transparent #be0002;
+    border-image: initial;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    transform: translateY(-100%);
+}
+.tab-content input[type="text"].invalid + .validation-txt .close-btn, .tab-content .dropdown-box .dropdown-selected.invalid + .validation-txt .close-btn {
+    background-color: #be0002;
+    position: absolute;
+    top: -7px;
+    right: 7px;
+    transform: translateY(-100%);
+    background-size: 10px 10px;
+    background-position: center center;
+    border-radius: 999px;
+    width: 18px;
+    height: 18px;
+}
+button {
+    cursor: pointer;
+    background: #314061;
+    color: #FFF;
+    border: 0;
+    width: 175px;
+    height: 40px;
+    text-transform: uppercase;
+    font-family: avantgardecedemi;
+    font-weight: 500;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+button:disabled {
+	background: #646869 !important;
+}
+button.has-icon:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 12px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width: 18px;
+	height: 18px;
+	margin-top: -4px;
+}
+    button[type="submit"]:before {
+        background-image: url(wwwroot/images/m88/common/icon-submit-white.svg);
+    }
+.back-btn:not(:last-child), .tab-content .no-btn:not(:last-child) {
+	background: #7E97CF;
+}
+button.back-btn:before {
+	background-image: url(wwwroot/images/m88/common/icon-back-white.svg);
+}
+button.next-btn:before {
+	background-image: url(wwwroot/images/m88/common/icon-next-white.svg);
+}
+button.no-btn:before {
+	background-image: url(wwwroot/images/m88/common/icon-close-white.svg);
+}
+button.yes-btn:before {
+	background-image: url(wwwroot/images/m88/common/icon-yes-white.svg);
+}
+button.confirm-btn:before {
+	background-image: url(wwwroot/images/m88/common/icon-yes-white.svg);
+}
+.tab-content button:not(:first-of-type):not(:first-child) {
+	margin: 0;
+	margin-left: 10px;
+}
+button.play-btn {
+    float: right;
+    margin-top: 20px;
+    background: #fdcf00;
+    color: #182432;
+    font-family: avantgardecedemi;
+    font-weight: 900;
+}
+button.play-btn:before {
+	background-image: url(wwwroot/images/m88/cashier/icon-playnow-blue.svg);
+}
+.tab-content .dropdown-box {
+	position: relative;
+}
+.tab-content .dropdown-box .dropdown-selected {
+	cursor: pointer;
+	background-image: url(wwwroot/images/m88/common/icon-carret-dark.svg);
+	background-repeat: no-repeat;
+	background-position: right 6px center;
+	background-size: 16px auto;
+	padding-right: 30px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.tab-content .dropdown-selection {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: translateY(100%);
+	border: 2px solid #7c94b8;
+	margin: 0;
+	background: #FFF;
+	z-index: 1;
+	min-width: 312px;
+	box-sizing: border-box;
+}
+.tab-content .dropdown-box .dropdown-selected.active ~ .dropdown-selection {
+	display: block;
+}
+.tab-content .dropdown-selection dt {
+	font-family: avantgardecedemi;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.tab-content .dropdown-selection * {
+	height: 30px;
+	line-height: 30px;
+	box-sizing: border-box;
+	margin: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.tab-content .dropdown-selection dd {
+	padding: 0 10px 0 20px;
+}
+.tab-content .dropdown-selection dd:hover {
+	background: #314061;
+	color: #FFF;
+	cursor: pointer;
+}
+.withdraw-step-2 strong, .withdraw-step-2 table td:last-child {
+	font-family: avantgardecedemi;
+	font-weight: 500;
+}
+.withdraw-step-finish .step-1 img {
+	width: 35px;
+}
+.withdraw-step-finish .step-1 p {
+	margin: 20px 0 0;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: avantgardecedemi;
+	font-weight: 500;
+	color: #646567;
+}
+.important-note {
+    margin: 0 0 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #2a323f;
+    color: #2a323f;
+    font-family: avantgardecedemi;
+	font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 13px;
+}
+.inner-confirm-page {
+	text-align: center;
+}
+.inner-confirm-page .confirmation-text {
+	margin: 0 0 25px;
+}
+.withdraw-step-finish .finish-transaction-note {
+	text-align: center;
+	color: #1a2430;
+	font-size: 14px;
+	line-height: 17px;
+	margin: 20px 0 0;
+}
+.op-process-headline {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+	line-height: 1;
+	padding: 10px 0 15px;
+    box-sizing: border-box;
+}
+.op-process-headline p {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+.op-process-headline p i {
+    vertical-align: middle;
+    position: relative;
+}
+.op-process-headline p span {
+    vertical-align: middle;
+}
+.op-process-headline .success-icon ~ span {
+    color: #2d8c44;
+}
+.op-process-headline .error-info-icon ~ span {
+    color: #bf0003;
+}
+.op-processing-steps {
+    font-size: 0;
+    text-align: center;
+}
+.op-processing-steps .op-step {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    font-size: 12px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+.op-processing-steps .op-step.active-step {
+    vertical-align: bottom;
+}
+.op-processing-steps .op-step p {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #646567;
+    margin: 20px 0 0;
+    font-size: 12px;
+    line-height: 15px;
+	height: 30px;
+    font-family: avantgardecedemi;
+	font-weight: 500;
+}
+.op-processing-steps .op-step i {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    display: block;
+    margin-top: 15px;
+}
+.op-processing-steps .op-step .op-info-img {
+    background-image: url(wwwroot/images/m88/cashier/icon-deposit-final-process-1.png);
+}
+.op-processing-steps .op-step .op-wallet-img {
+    background-image: url(wwwroot/images/m88/cashier/icon-deposit-final-process-2.png);
+}
+.op-processing-steps .op-step .op-list-img {
+    background-image: url(wwwroot/images/m88/cashier/icon-notification-form-grey-123.svg);
+}
+.op-processing-steps .op-step .op-list-active-img {
+    background-image: url(wwwroot/images/m88/cashier/icon-deposit-final-process-3.png);
+}
+.op-processing-steps .op-step .op-clock-img {
+    background-image: url(wwwroot/images/m88/cashier/icon-notification-timer-blue.svg);
+	height: 55px !important;
+	margin-top: 8px;
+}
+.op-processing-steps .op-step .op-pcards-active-img {
+    background-image: url(wwwroot/images/m88/cashier/icon-deposit-final-process-4.png);
+}
+.op-processing-steps .op-step.active-step p {
+    color: #bf0003;
+	font-size: 13px;
+}
+.op-processing-steps .op-step.active-step i {
+    height: 50px;
+    transform-origin: bottom;
+}
+.op-processing-steps .op-step::before {
+    background: #646567;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    width: 23px;
+    height: 23px;
+    line-height: 24px;
+    display: inline-block;
+    font-size: 11px;
+}
+.op-processing-steps .op-step.active-step::before {
+    background-color: #1a2332;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: #fdd001;
+    font-size: 14px;
+}
+.op-processing-steps .op-step:first-child::before {
+	content:'01';
+}
+.op-processing-steps .op-step:nth-child(2)::before {
+	content:'02';
+}
+.op-processing-steps .op-step:nth-child(3)::before {
+	content:'03';
+}
+.op-processing-steps .op-step:nth-child(4)::before {
+	content:'04';
+}
+.op-processing-steps .op-step.next-step::before {
+	background-color: #1a2332;
+}
+.op-processing-steps .op-step.next-step p {
+	color: #1a2332;
+}
+.op-processing-steps .op-step .arrow {
+    background-image: url(wwwroot/images/m88/cashier/icon-notification-arrow-grey.svg);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    position: absolute;
+    width: 52px;
+    height: 15px;
+    right: -20px;
+	bottom: 60px;
+    background-size: 60px 30px;
+}
+.op-processing-steps .op-step .arrow.active {
+	background-image: url(wwwroot/images/m88/cashier/icon-deposit-final-arrows.png);
+	background-size: 100%;
+	background-repeat: repeat-x;
+	animation-iteration-count: infinite;
+	animation-name: example;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+}
+.op-processing-steps .op-step .arrow.active:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+}
+@keyframes example {
+	0% {
+		background-position: 0 center;
+	}
+	100% {
+		background-position: 50px center;
+	}
+}
+#op-deposit-options {
+    display: block;
+}
+.deposit-tabs {
+    font-size: 0;
+}
+
+.deposit-tabs .deposit-tab-header {
+	background-color: #1a2332;
+	font-size: 12px;
+    color: #fff;
+    margin: 0;
+    padding: 12px 40px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: 10px center;
+}
+
+.deposit-tabs:first-child .deposit-tab-header {
+	background-image: url(wwwroot/images/m88/cashier/icon-payment-onlinedeposit-white.svg);
+}
+
+.deposit-tabs:nth-child(2) .deposit-tab-header {
+	background-image: url(wwwroot/images/m88/cashier/icon-payment-mobiledeposit-white.svg);
+}
+
+.deposit-tabs:nth-child(3) .deposit-tab-header {
+	background-image: url(wwwroot/images/m88/cashier/icon-deposit-c-Counter-b-white.svg);
+}
+.deposit-tabs:last-child .deposit-tab-header {
+	background-image: url(wwwroot/images/m88/cashier/icon-payment-cashcard-white.svg);
+}
+.deposit-tabs .payment-option {
+    display: inline-block;
+    vertical-align: top;
+    width: 145px;
+    padding: 30px 15px 30px 10px;
+}
+body:not(.hp8) .deposit-tabs .payment-option.alipay-pm a {
+	pointer-events: none;
+	cursor: not-allowed;
+	opacity: 0.3;
+}
+
+.deposit-tabs .payment-option#get-bank-details {
+    float: right;
+    width: 165px;
+    padding: 30px 10px;
+}
+
+.deposit-tabs .deposit-tab-header .hl-yellow {
+    color: #fced0a;
+}
+
+.deposit-tabs .payment-option a {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.deposit-tabs .payment-option a img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.deposit-tabs .payment-option p {
+	font-size: 12px;
+    margin: 15px 0 0;
+    line-height: 1;
+    text-align: center;
+}
+
+.deposit-tabs .payment-option p span {
+    font-weight: bold;
+}
+
+.deposit-tabs .payment-option#bank-details-btn {
+    padding: 30px 10px;
+    float: right;
+    width: 160px;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    width: 420px;
+    height: 410px;
+    left: 50%;
+    top: 50%;
+    margin-left: -210px;
+    margin-top: -205px;
+    background: #fff;
+	border: 1px solid #131432;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+#bank-details-popup::after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: -2;
+}
+
+.popup-headline {
+    background-color: #131432;
+    color: #fff;
+    padding: 8px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    overflow: auto;
+    line-height: 18px;
+}
+.close-btn {
+    float: right;
+    cursor: pointer;
+    background-image: url(wwwroot/images/m88/common/icon-close-white.svg);
+    background-repeat: no-repeat;
+    height: 18px;
+	width: 18px;
+}
+.prev-btn {
+	float: right;
+	cursor: pointer;
+	background-image: url('wwwroot/images/m88-ng/icon/Navigation_arrow down.svg');
+	background-repeat: no-repeat;
+	height: 18px;
+	width: 18px;
+}
+.close-btn-div {
+    background-image: url(wwwroot/images/m88/common/icon-close-white.svg);
+    background-repeat: no-repeat;
+    background-position: 43% center;
+    background-size: 25px;
+    clear: both;
+    background-color: #33415e;
+    color: #fff;
+    padding: 11px;
+    display: block;
+    box-sizing: inherit;
+    text-align: center;
+    text-indent: 30px;
+    margin: -21px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 23px;
+}
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome and Opera */
+}
+.popup-container .popup-body {
+	background-color: #fff;
+    padding: 20px;
+    display: block;
+    box-sizing: border-box;
+}
+.popup-container .popup-body > p {
+    margin: 0 0 20px;
+    font-weight: bold;
+}
+.popup-container .popup-body .bank-detail-steps {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 45px;
+}
+.popup-container .popup-body .bank-detail-steps p span {
+    font-weight: bold;
+}
+.popup-container .popup-body .bank-detail-steps p {
+    margin: 0;
+}
+.popup-container .popup-body .bank-detail-steps li {
+	padding-bottom: 15px;
+	position: relative;
+}
+.popup-container .popup-body .bank-detail-steps li:last-child {
+	padding-bottom: 0;
+}
+.popup-container .popup-body .bank-code-table {
+    width: 100%;
+}
+.popup-container .popup-body .bank-code-table caption {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 0 5px;
+}
+.popup-container .popup-body .bank-code-table tr td {
+    padding: 5px 10px;
+}
+.popup-container .popup-body .bank-code-table tr:nth-child(odd) {
+    background-color: #d4e5ed;
+}
+.popup-container .popup-body .bank-code-table tr:nth-child(even) {
+    background-color: #ebf4f9;
+}
+.popup-container .popup-body .bank-detail-steps li::before {
+    content: '';
+    background-size: cover;
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -45px;
+    top: -7px;
+    background-color: #1a2332;
+    color: #ede004;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 100%;
+    font-size: 15px;
+}
+.popup-container .popup-body .bank-detail-steps li:first-child::before {
+    content: '01';
+}
+.popup-container .popup-body .bank-detail-steps li:last-child::before {
+    content: '02';
+}
+.body-no-scroll {
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-right: 17px;
+}
+.payment-fields-headline, .confirmation-section-headline {
+	margin: 0;
+    font-size: 13px;
+    line-height: 1;
+    padding: 15px 30px;
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 0 center;
+}
+.payment-fields-headline, .confirmation-section-headline#online-deposit {
+	background-image: url(wwwroot/images/m88/cashier/icon-payment-onlinedeposit-darkblue.svg);
+}
+.payment-fields-table {
+    width: 100%;
+    margin-top: 10px;
+}
+.payment-fields-table tr td {
+    padding-bottom: 5px;
+}
+.has-val {
+    border-color: #5072a2 !important;
+}
+.has-error {
+    border-color: #c10005 !important;
+}
+.payment-fields-table tr td input:focus {
+    border-color: #5072a2;
+}
+.payment-fields-table tr td:first-child {
+	width: 25%;
+	vertical-align: top;
+}
+.payment-fields-table tr td:last-child {
+    width: 75%;
+}
+.payment-fields-table tr td p, .confirmation-section-table tr td p {
+    font-size: 13px;
+    font-weight: 600;
+	line-height: 1;
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+}
+.payment-fields-table .payment-fields-tnc {
+    line-height: 1.3 !important;
+}
+.payment-fields-table .payment-fields-tnc a {
+    color: #7f95cf;
+}
+.payment-fields-table .submit-btn {
+	cursor: pointer;
+    background-color: #314061;
+    width: 200px;
+    padding: 5px;
+    border: 0;
+    color: #fff;
+	font-weight: bold;
+}
+.payment-fields-table .submit-btn:before {
+	display: none;
+}
+.payment-fields-table .submit-btn[type="submit"]:disabled {
+	cursor: auto;
+    background-color: gray;
+}
+.payment-fields-table .submit-btn i {
+    background-image: url(wwwroot/images/m88/common/icon-submit-white.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.payment-fields-table tr td input, .payment-fields-table tr td .dropdown-box, .payment-fields-table tr td .dropdown-box span {
+	font-size: 12.5px;
+    width: 365px !important;
+	max-width: 365px !important;
+	font-family: 'avantgardecebook';
+}
+.payment-fields-table tr td .dropdown-box dl.dropdown-selection {
+    width: 346px;
+}
+.payment-fields-table #pref-bonus-field {
+    display: inline-block;
+    position: relative;
+}
+.success-icon, .error-icon, .error-info-icon {
+	display: inline-block;
+    box-sizing: border-box;
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+	right: 0;
+	top: 0;
+    width: 30px;
+	height: 30px;
+}
+.success-icon {
+	background-image: url(wwwroot/images/m88/common/icon-success.png);
+}
+.error-icon {
+	background-image: url(wwwroot/images/m88/common/icon-error.png);
+}
+.error-info-icon {
+	background-image: url(wwwroot/images/m88/common/icon-error-info.png);
+}
+.payment-fields-table #preferred-bank .dropdown-selected {
+    background-position: right 30px center;
+    width: 365px;
+    max-width: 365px;
+}
+.payment-fields-table #preferred-bank .dropdown-selection dd {
+    padding: 0 10px;
+}
+.payment-fields-table #preferred-bank .bank-info-btn {
+	background-image: url(wwwroot/images/m88/common/icon-info.png);
+	cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.payment-fields-table .preferred-bank-tips {
+	position: relative;
+	display: none;
+	pointer-events: none;
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+    width: 365px;
+    line-height: 1;
+    background-color: #1a2332;
+    color: #fff;
+    font-size: 11px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.payment-fields-table .preferred-bank-tips::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #1a2332;
+    position: absolute;
+    right: 10px;
+    top: -4px;
+}
+
+.confirmation-section-table {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.confirmation-section-table tr td {
+    padding-bottom: 5px;
+}
+
+.confirmation-section-table tr td:first-child {
+    width: 25%;
+}
+
+.confirmation-section-table tr td:last-child {
+    width: 75%;
+}
+
+.confirmation-section-table tr td:last-child div {
+    font-size: 12.5px;
+}
+
+.confirmation-section-table .submit-btn, .confirmation-section-table .back-btn {
+	cursor: pointer;
+	width: 200px;
+    padding: 5px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.confirmation-section-table .submit-btn {
+	background-color: #314061;
+}
+
+.confirmation-section-table .back-btn {
+    background-color: #7e97cf;
+}
+
+.confirmation-section-table .submit-btn span, .confirmation-section-table .back-btn span {
+    vertical-align: middle;
+}
+
+.confirmation-section-table .submit-btn i {
+    background-image: url(wwwroot/images/m88/common/icon-yes-white.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.confirmation-section-table .back-btn i {
+    background-image: url(wwwroot/images/m88/common/icon-back-white.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.back-icon {
+    background-image: url(wwwroot/images/m88/common/icon-back-white.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.payment-fields-headline, .confirmation-section-headline#mobile-deposit {
+	background-image: url(wwwroot/images/m88/cashier/icon-deposit-c-mobile-b-blue.svg);
+}
+.payment-fields-headline, .confirmation-section-headline#cash-card {
+	background-image: url(wwwroot/images/m88/cashier/icon-payment-cashcard-darkblue.svg);
+}
+#expiration-date {
+    text-transform: uppercase;
+}
+.card-security-container {
+    position: relative;
+    display: inline-block;
+}
+.card-security-container .card-code-btn {
+	background-image: url(wwwroot/images/m88/common/icon-info.png);
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+}
+.card-security-container .card-code-tips {
+    position: relative;
+    display: none;
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    width: 365px;
+    line-height: 1;
+    background-color: #1a2332;
+    color: #fff;
+    font-size: 11px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+#promotion-code-container {
+    display: inline-block;
+	position: relative;
+}
+#cc-confirmation-section .confirmation-section-table tr td:first-child {
+    width: 30%;
+}
+#cc-confirmation-section .confirmation-section-table tr td:first-child {
+    width: 30%;
+}
+#cc-confirmation-section .confirmation-section-table tr td:last-child {
+    width: 70%;
+}
+#bank-transfer-tab {
+    position: relative;
+}
+#bt-deposit-popup-1, #bt-deposit-popup-2 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+	transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 13px;
+}
+#bt-deposit-popup-2 {
+    right: -10px;
+    left: unset;
+    width: calc(100% + 140px);
+}
+
+#bt-deposit-options {
+    font-size: 0;
+}
+#bt-deposit-options .bt-option {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    padding: 20px;
+    vertical-align: text-bottom;
+    height: 145px;
+    width: 145px;
+    box-sizing: border-box;
+    cursor: pointer;
+    vertical-align: top;
+}
+#bt-deposit-options .bt-option:hover {
+    background: #d4e5ed;
+}
+#bt-deposit-options .bt-option p {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #646567;
+}
+#bt-deposit-options .bt-option i {
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin: 0 auto;
+}
+#bt-deposit-options .bt-option:first-child i {
+    background-image: url(wwwroot/images/m88/cashier/icon-pt-deposit-default.svg);
+}
+#bt-deposit-options .bt-option:last-child i {
+    background-image: url(wwwroot/images/m88/cashier/icon-notification-steps-form-default.svg);
+}
+#bt-deposit-popup-2 #bt-deposit-options a:first-child .bt-option i {
+    background-image: url(wwwroot/images/m88/cashier/icon-deposit-c-Internet-b-blue.svg);
+}
+#bt-deposit-popup-2 #bt-deposit-options a:nth-child(2) .bt-option i {
+    background-image: url(wwwroot/images/m88/cashier/icon-deposit-c-mobile-b-blue.svg);
+}
+#bt-deposit-popup-2 #bt-deposit-options a:nth-child(3) .bt-option i {
+    background-image: url(wwwroot/images/m88/cashier/icon-deposit-c-counter-b-blue.svg);
+}
+#bt-deposit-popup-2 #bt-deposit-options a:nth-child(4) .bt-option i {
+    background-image: url(wwwroot/images/m88/cashier/icon-deposit-c-ctm-blue.svg);
+}
+#bt-deposit-popup-2 #bt-deposit-options a:last-child .bt-option i {
+    background-image: url(wwwroot/images/m88/cashier/icon-deposit-c-atm-blue.svg);
+}
+.payment-fields-table tr td p.bt-step-headline span {
+    font-size: 15px;
+    vertical-align: middle;
+    color: #182432;
+    margin-top: 3px;
+    display: inline-block;
+    line-height: 1;
+}
+.payment-fields-table tr td p.bt-step-headline b  {
+    margin: 10px 0;
+	font-size: 24px;
+	vertical-align: middle;
+	color: #31405f;
+}
+.bt-bank-details {
+	font-size: 0;
+	margin-bottom: 2px;
+}
+.bt-bank-details:nth-child(odd) {
+    background-color: #d4e5ed;
+}
+.bt-bank-details:nth-child(even) {
+    background-color: #ebf4f9;
+}
+.bt-bank-details p {
+    font-size: 13px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    line-height: 1;
+}
+.bt-bank-details p:first-child {
+    width: 25%;
+    padding: 10px;
+}
+.bt-bank-details p:nth-child(2) {
+	width: 55%;
+	font-weight: bold;
+}
+.bt-bank-details p:last-child {
+    width: 20%;
+    text-align: center;
+    padding: 0;
+}
+.bt-bank-details p:last-child a {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #7e97cf;
+    color: #fff;
+}
+.bt-bank-details p:last-child a:active {
+	background-color: #314061;
+}
+.bt-bank-details p:last-child a i {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.copy-icon {
+	background-image: url(wwwroot/images/m88/common/icon-copy-white.svg);
+}
+.payment-fields-table-2 .bt-step-headline b {
+    margin: 10px 0;
+    font-size: 24px;
+    vertical-align: middle;
+    color: #31405f;
+}
+.payment-fields-table-2 .bt-step-headline span {
+    font-size: 15px;
+    vertical-align: middle;
+    color: #182432;
+    margin-top: 3px;
+    display: inline-block;
+    line-height: 1;
+}
+.payment-fields-table-2 .bt-step-headline {
+    padding: 10px 0;
+    font-weight: bold;
+}
+.bt-bank-step2-icons {
+    margin-bottom: 15px;
+    font-size: 0;
+}
+.bt-bank-step2-icons img {
+    display: inline-block;
+    width: 20%;
+    margin-right: 15px;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+.bt-bank-step2 div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.bt-bank-step2 div:last-child {
+    width: 200px;
+}
+.bt-bank-step2 div:last-child a {
+    display: block;
+    background: #646869;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+.bt-bank-step2 .dropdown-selected {
+    width: 312px !important;
+    margin: 0;
+}
+.bt-bank-step3 div {
+    display: inline-block;
+    margin-right: 10px;
+}
+.next-icon {
+    background-image: url(wwwroot/images/m88/common/icon-next-white.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#bt-depoform-payment-fields .payment-fields-table tr td input {
+    max-width: 312px !important;
+}
+
+#bt-depoform-payment-fields .payment-fields-table tr td .dropdown-box {
+    width: 312px !important;
+    max-width: 312px !important;
+}
+
+#bt-depoform-payment-fields .payment-fields-table tr td .dropdown-box dl.dropdown-selection {
+	width: 312px !important;
+}
+
+#bt-depoform-payment-fields tr td:nth-child(2) {
+	font-weight: bold;
+	line-height: 1;
+	padding-right: 0;
+}
+
+#bt-depoform-payment-fields tr.bt-depoform-rowheader td strong {
+    font-weight: bold;
+}
+
+.confirm-icon {
+    background-image: url(wwwroot/images/m88/common/icon-yes-white.svg);
+}
+
+.submit-icon {
+    background-image: url(wwwroot/images/m88/common/icon-submit-white.svg);
+}
+
+#btM88AccNum {
+    display: inline-block;
+}
+
+#btM88AccNum ~ p {
+    display: inline-block;
+    margin: 0;
+    clear: both;
+    float: right;
+    width: 65%;
+    text-align: right;
+}
+
+#btM88AccNum ~ p a {
+    color: #bf0003;
+    margin-left: 5px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#depoform-diff-account .payment-fields-table tr td:first-child {
+    white-space: normal;
+}
+
+#depoform-diff-account .payment-fields-table tr td {
+    padding-right: 0;
+}
+
+#bt-reminder-form {
+    margin-top: 20px;
+}
+
+.bt-reminder-container {
+    text-align: center;
+}
+
+.bt-reminder-container .bt-reminder-headline .bulb-icon {
+    background-image: url(wwwroot/images/m88/common/icon-bulb.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bt-reminder-container .bt-reminder-headline p {
+    font-size: 20px;
+    display: inline-block;
+    color: #5071a1;
+	font-weight: bold;
+	vertical-align: middle;
+    margin: 0 10px;
+}
+
+.bt-reminder-container .bt-reminder-headline .bulb-icon {
+    background-image: url(wwwroot/images/m88/common/icon-bulb.png);
+}
+
+.bt-reminder-container p.bt-reminder-p {
+    margin: 25px 0;
+    line-height: 1.5;
+}
+
+.bt-reminder-container .bt-reminder-bank {
+    width: 165px;
+    display: block;
+	margin: 0 auto 10px;
+	cursor: pointer;
+}
+.bt-reminder-container .submit-btn {
+    margin: 0 !important;
+    width: 165px;
+    line-height: 1 !important;
+    height: 50px;
+}
+#btdeposit-form1 #preferred-bank .dropdown-selected {
+    width: 312px !important;
+    background-position: right 10px center!important;
+}
+#btdeposit-form1 #mobile-number {
+    background-color: #babbbd;
+    user-select: none;
+    pointer-events: none;
+    border: 0;
+    background-image: url(wwwroot/images/m88/common/icon-lock.svg);
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+    background-size: 16px auto;
+    padding-right: 30px;
+}
+.op-process-fail {
+	display: none;
+	text-align: center;
+    font-weight: bold;
+}
+.op-process-fail .op-process-centertxt {
+    margin: 0;
+    margin-bottom: 15px;
+}
+#op-payment-fields .dropdown-selection {
+    width: 365px;
+}
+.confirmation-section-headline#online-deposit {
+	background-image: url(wwwroot/images/m88/cashier/icon-payment-onlinedeposit-darkblue.svg);
+}
+.confirmation-section-headline#mobile-deposit {
+	background-image: url(wwwroot/images/m88/cashier/icon-payment-mobiledeposit-darkblue.svg);
+}
+
+.payment-fields-headline#online-deposit {
+	background-image: url(wwwroot/images/m88/cashier/icon-payment-onlinedeposit-darkblue.svg);
+}
+
+.payment-fields-headline#mobile-deposit {
+	background-image: url(wwwroot/images/m88/cashier/icon-payment-mobiledeposit-darkblue.svg);
+}
+
+.payment-fields-headline#cash-card {
+	background-image: url(wwwroot/images/m88/cashier/icon-payment-cashcard-darkblue.svg);
+}
+
+.payment-fields-headline#bank-transfer {
+	background-image: url(wwwroot/images/m88/cashier/icon-deposit-c-counter-b-blue.svg);
+}
+
+#op-payment-fields .validation-txt {
+    width: 365px;
+    max-width: 365px;
+}
+
+#cc-deposit-step1 .card-security-container .close-btn {
+    right: 27px;
+    top: -6px;
+}
+
+#cc-deposit-step1 .card-security-container .validation-txt:after {
+    right: 30.5px;
+    border-width: 0px 5px 4px;
+}
+
+.payment-fields-table #pref-bonus-field .error-icon {
+    top: 4px;
+    right: 7px;
+    width: 18px;
+    height: 18px;
+    background-size: 100%;
+}
+
+#newdeposit-form .validation-txt {
+    width: 365px;
+    max-width: 365px;
+}
+
+#newdeposit-form .dropdown-selection {
+    width: 365px;
+}
+
+#newdeposit-form #newdeposit-dd2 .dropdown-selection {
+    width: 312px;
+}
+
+#newdeposit-form #newdeposit-dd2 .dropdown-selection dd {
+    padding: 0 10px;
+}
+
+#btdeposit-form1 tr td:nth-child(2) {
+    font-weight: normal;
+}
+
+#btdeposit-form1 .dropdown-selection dd {
+    padding: 0 10px;
+}
+
+.op-process-headline .error-info-icon ~ span {
+    text-transform: uppercase;
+}
+
+.confirmation-section-headline#cash-card {
+	background-image: url(wwwroot/images/m88/cashier/icon-payment-cashcard-darkblue.svg);
+}
+
+.payment-fields-table-2 {
+    display: none;
+}
+
+.op-list-active-attach-txt {
+    position: absolute;
+    bottom: -80px;
+    width: 300px;
+    left: -70px;
+    font-size: 14px;
+}
+
+.op-list-active-attach-txt a {
+    font-weight: bold;
+    color: #000;
+}
+#btM88AccNum span {
+    color: red;
+    text-decoration: underline;
+}
+.get-bank-details {
+	display: inline-block;
+	background: rgb(254,241,67);
+	background: -moz-linear-gradient(top, rgba(254,241,67,1) 0%, rgba(253,237,11,1) 50%, rgba(254,201,12,1) 51%, rgba(254,201,12,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(254,241,67,1) 0%,rgba(253,237,11,1) 50%,rgba(254,201,12,1) 51%,rgba(254,201,12,1) 100%);
+	background: linear-gradient(to bottom, rgba(254,241,67,1) 0%,rgba(253,237,11,1) 50%,rgba(254,201,12,1) 51%,rgba(254,201,12,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef143', endColorstr='#fec90c',GradientType=0 );
+	padding: 0 20px;
+	height: 55px;
+	line-height: 55px;
+}
+.get-bank-details span {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	font-family: avantgardecebook;
+	position: relative;
+	padding-left: 30px;
+}
+.get-bank-details span:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(wwwroot/images/m88/cashier/icon-sms-bank-blue.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100% auto;
+    width: 24px;
+    height: 20px;
+    margin-left: -5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.overlay {
+	visibility: hidden;
+	pointer-events: none;
+	background: #000;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 998;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+.overlay.active {
+	visibility: visible;
+	pointer-events: auto;
+	opacity: 0.75;
+}
+.gwallet {
+    position: relative;
+}
+.gwallet-popup {
+	display: none;
+    padding: 15px;
+    background-color: #be2025;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 260px;
+    z-index: 1;
+    margin-left: 10px;
+}
+.gwallet-popup::before {
+    content: "";
+	display: block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    background: #be2025;
+    position: absolute;
+    z-index: 1;
+    left: -5px;
+    top: 10px;
+}
+.gw-popup-header {
+    font-size: 18px;
+    position: relative;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 10px;
+	padding-right: 30px;
+	white-space: nowrap;
+}
+.gwallet-popup p {
+    line-height: 1.6;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.gw-popup-header::before {
+    content: '';
+    background-image: url(wwwroot/images/m88/common/icon-bulb-white.png);
+    background-size: cover;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.gwallet-popup::after {
+    content: '';
+    background: #f5f5f6;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    z-index: 0;
+}
+.gw-popup-header span {
+    vertical-align: middle;
+    font-size: 17px;
+    line-height: 0;
+}
+.gw-popup-header .close-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bt-depoform-rowheader td  {
+	font-weight: avantgardecedemi !important;
+}
+#deposit-slip-tr td {
+    font-size: 0;
+}
+
+#deposit-slip-tr .deposit-slip {
+    background-color: #7e97cf;
+    color: #fff;
+    display: inline-block;
+    padding: 9px 5px;
+    width: 115px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#deposit-slip-tr .deposit-file-name {
+    width: 187px;
+    color: #8f9193;
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid #d5e6f0;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+#deposit-slip-tr .deposit-file-submit {
+    display: inline-block;
+    width: 120px;
+    margin-left: 10px;
+    padding: 9px;
+    height: auto;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'avantgardecebook';
+    background-color: #314060;
+}
+
+#deposit-slip-tr .deposit-file-submit:disabled {
+    cursor: auto;
+}
+
+#deposit-slip-tr td p span:last-child {
+    color: #bf0003;
+}
+
+#deposit-slip-tr td:nth-child(2) p {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+}
+
+#mobile-number-tr div {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+#mobile-number-tr div input {
+    display: inline-block;
+    width: auto !important;
+    vertical-align: middle;
+    margin: 2px 3px 0 0;
+}
+
+#mobile-number-tr div label {
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: middle;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.internet-banking-container {
+    background-color: #eaf4f8;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.internet-banking-container table tr td:first-child {
+    width: 25%;
+    vertical-align: top;
+}
+
+.internet-banking-container table tr td p {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.internet-banking-container table tr td:nth-child(2) {
+    width: 75%;
+    padding: 10px 15px 10px 0;
+    line-height: 1;
+    padding-right: 0;
+    padding-bottom: 5px;
+    font-weight: normal;
+}
+
+.internet-banking-container table tr td .dropdown-selected {
+    background-color: #fff;
+}
+
+.internet-banking-container > p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.internet-banking-container > p:first-child {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.internet-banking-container table tr td .dropdown-box {
+    max-width: 312px;
+}
+
+.bt-step-2-note {
+    color: #bf0003;
+    font-weight: bold;
+    position: relative;
+    margin: 0;
+    margin-left: 90px;
+}
+
+.bt-step-2-note span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.bt-step-2-note i {
+    position: relative;
+    vertical-align: middle;
+    background-size: 100%;
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+#newdeposit-form .dropdown-selected {
+    width: 365px !important;
+    max-width: 365px !important;
+}
+
+.test-note {
+    background: rgba(251, 235, 16, 0.75);
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    z-index: 9999;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 80px;
+    text-align: center;
+    color: #000;
+    box-shadow: 1px 1px 10px #000000;
+    border-radius: 10px;
+	pointer-events: none;
+}
+.test-note .inner-box {
+	display: inline-block;
+	line-height: normal;
+	vertical-align: middle;
+}
+.test-note strong {
+	font-size: 17px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.lang-kh .test-note strong {
+	font-size: 16px;
+    line-height: 16px;
+}
+.test-note p {
+	font-size: 14px;
+	margin: 0;
+}
+.lang-kh .test-note p {
+    font-size: 14px;
+    line-height: 21px;
+}
+.test-note span {
+	display: inline-block;
+}
+.loader, .loader:after {
+	border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+.loader {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	font-size: 0;
+	position: relative;
+	text-indent: -9999em;
+	border-top: 3px solid rgba(126, 151, 207, 0.2);
+	border-right: 3px solid rgba(126, 151, 207, 0.2);
+	border-bottom: 3px solid rgba(126, 151, 207, 0.2);
+	border-left: 3px solid #7e97cf;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-animation: load8 1.1s infinite linear;
+	animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes load8 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+
+.tab-content .helper-txt {
+	font-size: 16px;
+	line-height: 22px;
+	font-family: 'OpenSansBold';
+	margin: 0 0 24px;
+}
+.bank-method-tabber {
+	margin: 0 0 32px !important;
+}
+.bank-method-tabber li:not(:last-child) {
+	padding-right: 8px;
+}
+.bank-method-tabber a {
+	display: block;
+	padding: 0 8px 8px;
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+	box-sizing: border-box;
+}
+.bank-method-tabber .active a {
+	border-bottom: 2px solid #ffcd00;
+}
+.bank-method-tabber a img {
+	width: 24px;
+	height: 24px;
+}
+.bank-method-tabber a span {
+	position: relative;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	white-space: nowrap;
+}
+.bank-method-tabber .active a span {
+	color: transparent;
+}
+.bank-method-tabber .active a span:before {
+	content: attr(data-txt);
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #000;
+	font-family: 'OpenSansBold';
+}
+.bank-method-tabber + .tip-cashier {
+	margin: -16px 0 40px;
+}
+.tip-cashier {
+	min-height: 56px;
+	line-height: 56px;
+	border-radius: 2px;
+	background-color: #f5f5f6;
+	padding: 0 8px;
+	margin: 0 0 40px;
+}
+.tip-cashier > .inner {
+    font-size: 14px;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tip-cashier.tip-reminder > .inner {
+    background-image: url(wwwroot/images/m88/cashier/icon-reminder.svg);
+	background-repeat: no-repeat;
+	background-position: left top 5px;
+	padding: 5px 0px 5px 32px;
+	min-height: 25px;
+}
+.inner-box-banks {
+    font-size: 0;
+    margin: 0 -16px -16px 0;
+}
+.box.bank-card {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	background-color: #f5f5f6;
+	border-radius: 10px;
+	width: 198px;
+	font-size: 10px;
+	line-height: normal;
+	text-align: center;
+	margin: 0 16px 16px 0;
+	padding-bottom: 16px;
+	cursor: pointer;
+	white-space: normal;
+	min-height: 132px;
+}
+.box.bank-card:hover {
+	background-color: #E7E7E7;
+}
+.inner-box-banks:not(.filtered) .box.bank-card.box-large {
+    width: calc(100% - 16px);
+}
+.inner-box-banks:not(.filtered) .box.bank-card.box-large.recom {
+	width: calc(100% - 16px);
+}
+.box.bank-card .tag {
+	display: inline-block;
+	border-radius: 2px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	color: #1a2332;
+	font-family: 'OpenSansBold';
+	text-align: center;
+	padding: 0 8px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, -50%);
+}
+.box.bank-card .tag.tag-recommended {
+	background-color: #ffcd00;
+}
+.inner-box-banks:not(.filtered) .box.bank-card.box-large > .inner {
+	min-height: auto;
+	padding: 12px 8px 8px;
+}
+.box.bank-card > .inner, .inner-box-banks.filtered .box.bank-card > .inner {
+	height: 100%;
+	min-height: 112px;
+	padding: 12px 16px 4px;
+	box-sizing: border-box;
+}
+.box.bank-card .inset {
+	display: table;
+	width: 100%;
+    height: 100%;
+}
+.box.bank-card .inset > .row-1 {
+    padding-bottom: 1px;
+    display: table-row;
+    height: 1%;
+}
+
+
+/*.inner-box-banks:not(.filtered) .box.bank-card.box-large .inset > .row-1 > .row-1 img {
+    height: 45px;
+	 max-width: fit-content;
+}*/
+.box.bank-card .inset > .row-1 > .row-2 {
+	line-height: 16px;
+}
+.inner-box-banks:not(.filtered) .box.bank-card.box-large .inset > .row-1 > .row-2 {
+    line-height: 18px;
+    font-size: 12px;
+	margin-bottom: 3px;
+}
+.inner-box-banks:not(.filtered) .box.bank-card.box-large .inset > .row-1 > .row-2 img {
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+}
+.inner-box-banks:not(.filtered) .box.bank-card.box-large .inset > .row-1 > .row-2 span {
+	vertical-align: middle;
+}
+.inner-box-banks .box.bank-card.box-large .inset > .row-1 > .row-2 > span:last-child {
+	display: none;
+}
+.box.bank-card .inset > .row-2 {
+	display: table-row;
+	height: 100%;
+	font-size: 12px;
+	line-height: 18px;
+}
+.inner-box-banks:not(.filtered) .box.bank-card.box-large .inset > .row-2 {
+	display: none;
+}
+.box.bank-card .inset > .row-2 > .col {
+	display: table-cell;
+	vertical-align: middle;
+}
+.box.bank-card .inset > .row-2:not(:last-child) > .col-1 {
+	padding-bottom: 4px;
+}
+.box.bank-card .inset > .row-3 {
+	font-size: 8px;
+	color: #bc1f00;
+	text-shadow: 0 0 #bc1f00;
+	line-height: 10px;
+}
+.inner-box-banks:not(.filtered) .box.bank-card.box-large .inset > .row-3 {
+	margin-bottom: 10px;
+}
+.inner-box-banks.filtered .box.bank-card.box-large .inset > .row-4 {
+	display: none;
+}
+.box.bank-card.box-large .inset > .row-4 > .inner {
+	font-size: 0;
+	margin: 0 -8px -8px 0;
+	text-align: left;
+}
+.box.bank-card.box-large .inset > .row-4 .txt-heading {
+	font-size: 10px;
+	line-height: 14px;
+	margin-bottom: 8px;
+}
+.box.bank-card.box-large .inset > .row-4 .box {
+    display: inline-block;
+    vertical-align: middle;
+	width: calc(25% - 8px);
+    height: 32px;
+    line-height: 28px;
+    margin: 0 8px 8px 0;
+    background-color: #fff;
+    border: solid 1px #d2e3ec;
+    box-sizing: border-box;
+	text-align: center;
+}
+
+	.box.bank-card.box-large .inset > .row-4 .box img {
+		max-width: 80px;
+		max-height:26px;
+	}
+/*.box.bank-card .method {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+	font-family: 'OpenSansBold';
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}*/
+.box.bank-card .method-bt {
+	background-color: #6a9436;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+	font-family: 'OpenSansBold';
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.box.bank-card .method-md {
+	background-color: #ffcd00;
+	color: #000;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	font-family: 'OpenSansBold';
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.box.bank-card .method-od {
+	background-color: #bc1f00;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+	font-family: 'OpenSansBold';
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.box.bank-card .method-cc {
+	background-color: #1e619f;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+	font-family: 'OpenSansBold';
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.box.bank-card .method-cp {
+	background-color: #9b3a97;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+	font-family: 'OpenSansBold';
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.recently-used-payments .scroller-inner > ul > li {
+	margin: 0 8px 0 0;
+}
+.recently-used-payments .scroller-inner > ul > li:last-child {
+	margin-right: 0;
+}
+.recently-used-payments .box.bank-card {
+	margin: 0;
+}
+.scroll-holder {
+	position: relative;
+}
+.scroll-mover {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.scroll-holder .touch-handler {
+	pointer-events: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0,0.3);
+	cursor: move;
+	opacity: 0;
+}
+.scroll-holder:hover *:not(.touch-handler) {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.scroll-holder.init *:not(.touch-handler) {
+	pointer-events: none;
+}
+.scroll-holder.init .touch-handler {
+	pointer-events: auto;
+	opacity: 1;
+}
+.scroll-holder.scroll-x .scroller-inner {
+	max-width: 9999px;
+}
+.scroll-holder.scroll-x .scroller-inner ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	white-space: nowrap;
+}
+.scroll-holder.scroll-x .scroller-inner ul li {
+	display: inline-block;
+	vertical-align: middle;
+}
+.scroll-holder .arrow {
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	/*background: rgba(1,1,1,0.5);*/
+	cursor: pointer;
+	transition: transform .1s;
+	width: 34px;
+	height: 100%;
+}
+.scroll-holder:hover .arrow.visible {
+	display: block;
+}
+.scroll-holder .arrow.prev {
+	left: 0;
+	transform: scale(-1);
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+.scroll-holder .arrow.next {
+	right: 0;
+	transform: scale(1);
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.scroll-holder .arrow-top, .scroll-holder .arrow-bottom {
+	background-color: #888;
+    height: 2px;
+    left: -18%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.scroll-holder .arrow-top:after, .scroll-holder .arrow-bottom:after {
+	background-color: #fff;
+	content: '';
+	height: 100%;
+	position: absolute;
+	top: 0;
+	transition: all 0.15s;
+}
+.scroll-holder .arrow-top {
+	transform: rotate(45deg)  scale(0.9);
+	transform-origin: bottom right;
+}
+.scroll-holder .arrow-top:after {
+	left: 100%;
+	right: 0;
+	transition-delay: 0s;
+}
+.scroll-holder .arrow-bottom {
+	transform: rotate(-45deg) scale(0.9);
+    transform-origin: top right;
+}
+.scroll-holder .arrow-bottom:after {
+	left: 0;
+	right: 100%;
+	transition-delay: 0.15s;
+}
+.scroll-holder .arrow:hover .arrow-top:after {
+	left: 0;
+	transition-delay: 0.15s;
+}
+.scroll-holder .arrow:hover .arrow-bottom:after {
+	right: 0;
+	transition-delay: 0s;
+}
+.scroll-holder .arrow.prev:active .arrow-top, .scroll-holder .arrow.next:active .arrow-top {
+	transform: rotate(45deg)  scale(0.7);
+	left: -25%;
+}
+.scroll-holder .arrow.prev:active .arrow-bottom, .scroll-holder .arrow.next:active .arrow-bottom {
+	transform: rotate(-45deg) scale(0.7);
+	left: -25%;
+}
+.recently-used-payments {
+	margin-bottom: 32px;
+}
+.popup-cashier {
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	box-shadow: 0 5px 10px 0 #929292;
+}
+.popup-cashier .popup-heading {
+	height: 40px;
+	line-height: 40px;
+	background-color: #1a2332;
+	font-size: 16px;
+	color: #fff;
+	padding: 0 14px;
+	font-family: 'OpenSansBold';
+	position: relative;
+}
+    .popup-cashier .popup-heading .close-btn {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url('wwwroot/images/m88/common/icon-close-white.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 0;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+	.popup-cashier .popup-heading .prev-btn {
+		display: inline-block;
+		height: 16px;
+		background-image: url(wwwroot/images/m88/icon/Navigation_arrow down.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		font-size: 0;
+		transform: translateY(50%);
+		float: left;
+		position: relative;
+		top: 4px;
+	}
+
+	.popup-cashier.bt-popup .popup-content {
+		padding: 24px 13.5px 0px 13.5px;
+	}
+.popup-cashier.bt-deposit-channel-popup .popup-content {
+	padding: 16px;
+}
+/*.popup-cashier.bt-popup {
+	min-width: 370px;
+	width:auto;
+}*/
+
+.popup-cashier .popup-content .bank-img {
+	text-align: center;
+	margin-bottom: 24px;
+}
+	.popup-cashier .popup-content .bank-img img {
+		height: 32px;
+		width: 160px;
+	}
+.popup-cashier .popup-content .row {
+	font-size: 0;
+}
+	.popup-cashier.bt-popup .popup-content .row {
+		margin-right: -16px;
+		display: inline-flex;
+	}
+.popup-cashier.bt-deposit-channel-popup .popup-content .row {
+	margin: 0 -16px -8px 0;
+}
+	.popup-cashier.bt-popup .popup-content .row > .col {
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		width: 50%;
+		padding-right: 16px;
+		box-sizing: border-box;
+		min-width: 164px;
+	}
+.popup-cashier.bt-deposit-channel-popup .popup-content .row > .col {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+	width: 33.33%;
+    padding: 0 16px 16px 0;
+    box-sizing: border-box;
+}
+	.popup-cashier.bt-popup .popup-content .row > .col > .txt-1 {
+		display: block;
+		font-size: 14px;
+		line-height: 19px;
+		margin-bottom: 16px;
+		color: #000000;
+	}
+
+	.lang-vi .popup-cashier.bt-popup .popup-content .row > .col > .txt-1 {
+		height: 60px;
+	}
+
+.popup-cashier.bt-deposit-channel-popup .popup-content .txt-1 {
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 16px;
+}
+.popup-cashier .popup-content .row > .col .box-btn {
+	display: block;
+	height: 112px;
+	line-height: 112px;
+	border-radius: 10px;
+	background-color: #f5f5f6;
+	color: #000;
+}
+.popup-cashier.bt-popup .popup-content .row > .col .box-btn {
+	margin-bottom: 8px;
+}
+.popup-cashier .popup-content .row > .col .box-btn span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+.popup-cashier .popup-content .row > .col .box-btn img {
+	margin-bottom: 8px;
+}
+.popup-cashier.bt-deposit-channel-popup .popup-content .row > .col .box-btn img {
+	height: 48px;
+}
+.popup-cashier .popup-content .row > .col .box-btn p {
+	display: block;
+	font-size: 14px;
+	line-height: 21px;
+}
+.popup-cashier .popup-content .row > .col .box-btn:hover p {
+	font-family: 'OpenSansBold';
+}
+
+.lang-th .popup-cashier .popup-content .row > .col .box-btn:hover p {
+	font-weight: bold;
+}
+
+.popup-cashier .popup-content .row > .col .txt-2 {
+	font-size: 12px;
+	line-height: 18px;
+}
+.tab-control {
+	list-style: none;
+	display: flex;
+	margin: 0 0 5px;
+	padding: 0;
+}
+.tab-control li {
+	vertical-align: middle;
+}
+.tab-control .active [type="button"] {
+	border-bottom: 4px solid #FDCF01;
+}
+.tab-control [type="button"] {
+	display: block;
+	background: #FFF;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	border: 1px solid #D4E5ED;
+	box-sizing: border-box;
+	margin-right: 5px;
+	cursor: pointer;
+	font-size: 0;
+}
+.tab-control [type="button"] .inner {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+.tab-control [type="button"] img {
+	vertical-align: middle;
+	width: 21px;
+	height: 21px;
+	margin-right: 10px;
+}
+.tab-control [type="button"] .inner span {
+	vertical-align: middle;
+	font-family: avantgardecedemi;
+	font-weight: 500;
+	font-size: 14px;
+}
+@media (max-width: 1023px) {
+	.container .cashier-nav, .transaction-content, .inner-content > .col-1 {
+		display: none;
+	}
+	.tab-control {
+		justify-content: space-between;
+		background-color: #EBEBEB;
+		margin: 0;
+		width: 100%;
+		padding: 0 16px;
+		box-sizing: border-box;
+	}
+	.tab-control li {
+		width: 33.33%;
+		margin-right: 8px;
+	}
+	.tab-control li:last-child {
+		margin-right: 0;
+	}
+	.tab-control [type="button"] {
+		margin: 0;
+		height: 64px;
+		line-height: 64px;
+		padding: 0;
+		text-align: center;
+		background-color: transparent;
+		border: 0;
+	}
+	.tab-control [type="button"] img {
+		width: 24px;
+		height: 24px;
+		margin: 0 0 4px;
+	}
+	.tab-control [type="button"] .inner span {
+		font-size: 12px;
+		line-height: 16px;
+		display: block;
+	}
+	.tab-content {
+		/*padding: 32px 16px;*/
+		padding: 10px 16px 10px 16px;
+		border: 0;
+	}
+	.inner-box-banks .box.bank-card:not(.box-large), .inner-box-banks.filtered .box.bank-card.box-large {
+		width: calc(25% - 16px);
+	}
+	.tab-content .helper-txt {
+		font-size: 14px;
+		line-height: 19px;
+	}
+	.inner-content.row {
+		padding: 0;
+	}
+	.inner-content > .col-2 {
+		display: block;
+		width: auto;
+	}
+	.tip-cashier > .inner {
+		font-size: 12px;
+	}
+	.scroll-holder {
+		margin-left: -16px !important;
+		margin-right: -16px !important;
+	}
+	.scroll-holder .scroller-inner > ul > li:first-child {
+		padding-left: 16px;
+	}
+	.scroll-holder .scroller-inner > ul > li:last-child {
+		padding-right: 16px;
+	}
+	.tab-content table tr {
+		display: block;
+		margin-bottom: 25px;
+	}
+	.tab-content table td {
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+	.tab-content table td:first-child {
+		width: 100%;
+	}
+	.tab-content .mobile-ledger {
+		margin-top: 15px;
+	}
+	.tab-content .mobile-ledger table tr {
+		display: table-row;
+		margin: 0;
+	}
+	.tab-content .mobile-ledger table tr.odd {
+		background: #D4E5EE;
+	}
+	.tab-content .mobile-ledger table tr.even {
+		background: #EAF4F8;
+	}
+	.tab-content .mobile-ledger table td {
+		display: table-cell;
+		width: 50%;
+		background: none;
+		border: 0;
+		text-align: left;
+		padding: 10px 20px;
+	}
+	.tab-content button {
+		width: 100%;
+	}
+	.tab-content select, .tab-content input[type="text"], .tab-content .dropdown-box .dropdown-selected{
+		max-width: 100%;
+	}
+	.tab-content input[type="text"].invalid + .validation-txt, .tab-content .dropdown-box .dropdown-selected.invalid + .validation-txt {
+		max-width: 100%;
+	}
+	.tab-content ol.breadcrumbs {
+		border-bottom: 2px dotted #939498;
+	}
+	.tab-content ol.breadcrumbs li {
+		font-size: 0;
+	}
+	.tab-content ol.breadcrumbs li.active{
+		font-size: 15px;
+	}
+	.tab-content ol.breadcrumbs li:before {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 15px;
+	}
+	.tab-content ol.breadcrumbs li:not(.active) {
+		width: 1%;
+	}
+	.tab-content .withdraw-step-2 table tr:last-child td:last-child {
+		font-size: 0;
+		white-space: nowrap;
+	}
+	.tab-content .withdraw-step-2 button {
+		width: calc(50% - 5px);
+		margin: 0 10px 0 0 !important;
+	}
+	.tab-content .dropdown-selection {
+		min-width: auto;
+	}
+	.tab-content .dropdown-selection * {
+		height: auto;
+	}
+	.bank-method-tabber a {
+		font-size: 14px;
+	}
+	.bank-method-tabber .active a {
+		border-bottom: 4px solid #ffcd00;
+	}
+	.bank-method-tabber a img {
+		width: 24px;
+		height: 24px;
+	}
+	.op-processing-steps .op-step {
+		display: block;
+		width: 100%;
+		vertical-align: top;
+		text-align: left;
+		margin-bottom: 25px;
+	}
+	.op-processing-steps .op-step .arrow {
+		display: none;
+	}
+	.op-processing-steps .op-step:before {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.op-processing-steps .op-step i {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		background-size: 100% auto;
+		vertical-align: middle;
+		margin: 0;
+	}
+	.op-processing-steps .op-step p {
+		text-align: left;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		height: auto;
+		line-height: normal;
+	}
+	.tab-content button.play-btn {
+		margin: 0;
+		float: none;
+		display: block;
+	}
+	.mwallet dl:first-child > dt:first-child, .mwallet dl:first-child > dt:first-child + dd {
+		background-color: #1A2332;
+		color: #FFF;
+		font-family: avantgardecedemi;
+		font-size: 16px;
+	}
+	.mwallet dl:first-child > dd {
+		margin: 0;
+	}
+	.mwallet dl:first-child > dt:first-child + dd {
+		color: #FDCF01;
+	}
+	.sidebar-wallets .toggle-parent:after {
+		background-image: url(wwwroot/images/m88/__dropdown-collapse-white.svg);
+	}
+	.sidebar-wallets.gwallet strong, .mobile-ledger .ledger-title {
+		font-family: avantgardecedemi;
+		font-weight: 500;
+		height: 40px;
+		line-height: 40px;
+	}
+	.ledger-title:before {
+		display: none;
+	}
+	.deposit-tabs .deposit-tab-header {
+		font-size: 10px;
+	}
+	.deposit-tabs .payment-option {
+		width: 50%;
+		box-sizing: border-box;
+	}
+	.deposit-tabs .payment-option#bank-details-btn {
+		float: none;
+		width: 50%;
+	}
+	.popup-container {
+		width: 90%;
+		left: 50%;
+		margin-left: -45%;
+		height: auto;
+		top: 45%;
+	}
+	.popup-container .popup-body .bank-code-table tr td {
+		white-space: normal;
+		box-sizing: border-box;
+	}
+	.close-btn-div {
+		background-position: 42% center;
+	}
+	.payment-fields-headline, .confirmation-section-headline {
+		border-bottom-style: dashed;
+		font-size: 0;
+		background-image: none !important;
+		padding: 10px 0;
+	}
+	.payment-fields-headline .payment-name, .confirmation-section-headline .payment-name {
+		font-size: 15px;
+		margin-left: -9px;
+	}
+	.tab-content table td {
+		width: 100%;
+	}
+	.payment-fields-table tr td input, .payment-fields-table tr td .dropdown-box, .payment-fields-table tr td .dropdown-box span {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	.payment-fields-table #preferred-bank .dropdown-selected {
+		width: 100%;
+		max-width: 100%;
+	}
+	.payment-fields-table #pref-bonus-field {
+		width: 100%;
+	}
+	#op-payment-fields .dropdown-selection {
+		width: 100%;
+	}
+	#op-payment-fields .validation-txt {
+		max-width: 100%;
+		width: 100%;
+	}
+	.payment-fields-table .submit-btn {
+		width: 100%;
+	}
+	.confirmation-section-table tr:last-child td {
+		font-size: 0;
+	}
+	.confirmation-section-table .submit-btn, .confirmation-section-table .back-btn {
+		width: calc(50% - 6px);
+		width: -webkit-calc(50% - 6px);
+		width: -moz-calc(50% - 6px);
+		width: -o-calc(50% - 6px);
+		display: inline-block;
+		margin: 0 3px !important;
+	}
+	.op-list-active-attach-txt {
+		position: relative;
+		left: 40px;
+		width: 85%;
+		text-align: left;
+		bottom: -10px;
+	}
+	.op-processing-steps .op-step i {
+		margin-left: 5px;
+	}
+	.op-processing-steps .op-step.active-step i {
+		margin-left: 5px;
+	}
+	.op-processing-steps .op-step p {
+		margin-left: 10px;
+	}
+	.op-process-headline {
+		padding-bottom: 25px;
+	}
+	#bt-deposit-popup-1, #bt-deposit-popup-2 {
+		width: 100%;
+		left: 0;
+		top: -15%;
+	}
+	#bt-deposit-options .bt-option {
+		width: 50%;
+		padding: 10px;
+		height: auto;
+		vertical-align: middle;
+	}
+	.card-security-container {
+		width: 100%;
+	}
+	#promotion-code-container {
+		width: 100%;
+	}
+	.bt-bank-step2 div:last-child {
+		width: 100%;
+		margin-top: 15px;
+	}
+	.bt-bank-step3 div {
+		width: 100%;
+	}
+	#bt-depoform-payment-fields .payment-fields-table tr td .dropdown-box {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+	#bt-depoform-payment-fields .payment-fields-table tr td input {
+		max-width: 100% !important;
+	}
+	#bt-depoform-payment-fields .payment-fields-table tr td .dropdown-box dl.dropdown-selection {
+		width: 100% !important;
+	}
+	#btM88AccNum ~ p {
+		float: none;
+		margin-top: 10px;
+	}
+	#bt-depoform-payment-fields tr:last-child td {
+		font-size: 0;
+	}
+	#bt-depoform-payment-fields tr:last-child td button {
+		width: calc(50% - 6px) !important;
+		width: -webkit-calc(50% - 6px) !important;
+		display: inline-block;
+		margin: 0 3px !important;
+	}
+	.body-no-scroll {
+		padding: 0 !important;
+	}
+	#newdeposit-form .dropdown-selection {
+		width: 100%;
+	}
+	#newdeposit-form .validation-txt, .payment-fields-table .preferred-bank-tips {
+		width: 100%;
+		max-width: 100%;
+	}
+	#newdeposit-dd2 {
+		width: 100%;
+	}
+	#newdeposit-dd2 .dropdown-selected {
+		width: 100% !important;
+		max-width: 100%;
+	}
+	.payment-fields-table .submit-btn[type="submit"] {
+		width: 100% !important;
+	}
+	.payment-fields-table-2 .bt-step-headline p {
+		margin: 0;
+	}
+	.payment-fields-table-2 .bt-step-headline {
+		padding: 15px 0;
+	}
+	#newdeposit-form tr {
+		margin-bottom: 0;
+	}
+	#btdepositformstep2 .submit-btn, #btdepositformstep4 .submit-btn {
+		width: 50% !important;
+	}
+	#btdeposit-form1 tr:last-child td button.submit-btn {
+		width: 100% !important;
+	}
+	#bt-depoform-payment-fields td, #bt-payment-fields td, #op-payment-fields td, #op-confirmation-section td {
+		width: 100%;
+	}
+	.slider .slider-imgs {
+		max-width: 500px;
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.test-note {
+		top: 10px;
+		width: 250px;
+		height: 75px;
+		padding: 0 17px;
+		line-height: 75px;
+	}
+	.test-note strong {
+		font-size: 14px;
+	}
+	.test-note  p {
+		font-size: 12px;
+	}
+	.box.bank-card.box-large .inset > .row-4 > .inner {
+		margin: 0 -4px -4px 0;
+	}
+	.box.bank-card.box-large .inset > .row-4 .box {
+		width: calc(25% - 4px);
+		height: 32px;
+		line-height: 30px;
+		margin: 0 4px 4px 0;
+	}
+		/*.box.bank-card.box-large .inset > .row-4 .box img {*/
+			/*height: 82%;*/
+			/*width: calc(50% - 1px);
+		}*/
+}
+@media (max-width: 767px) {
+	.inner-box-banks .box.bank-card:not(.box-large), .inner-box-banks.filtered .box.bank-card.box-large {
+		width: calc(33.33% - 16px);
+	}
+
+}
+@media (max-width: 600px) {
+	.slider .slider-btns button {
+		width: 140px;
+	}
+}
+@media (max-width: 540px) {
+	.inner-box-banks .box.bank-card:not(.box-large), .inner-box-banks.filtered .box.bank-card.box-large {
+		width: calc(50% - 16px);
+	}
+	.inner-box-banks .box.bank-card:not(.box-large) > .inner, .inner-box-banks.filtered .box.bank-card.box-large > .inner {
+		padding: 12px 4px 4px;
+	}
+	.box.bank-card.box-large .inset > .row-4 > .inner {
+		margin: 0 -20px -4px 0;
+	}
+	.box.bank-card.box-large .inset > .row-4 .box {
+		width: calc(50% - 20px);
+		margin: 0 20px 4px 0;
+	}
+
+		.box.bank-card.box-large .inset > .row-4 .box img {
+			/* height: calc(57% - 1px); */
+			width: calc(35% - 1px);
+		}
+	
+		.box.bank-card .inset > .row-1 > .row-1 img {
+		height: 24px;
+		max-height: 24px;
+		max-width: 120px;
+	}
+
+}
+@media (max-width: 480px) {
+	.popup-cashier {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		top: auto;
+		z-index: 992;
+		transform: translate(0, 0);
+		width: 100% !important;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.popup-cashier:before {
+		content: "";
+		display: block;
+		width: 64px;
+		height: 4px;
+		border-radius: 2px;
+		background-color: #fff;
+		position: absolute;
+		left: 50%;
+		top: -4px;
+		transform: translate(-50%, -100%);
+	}
+		.popup-cashier .popup-heading {
+			height: auto;
+			line-height: normal;
+			background-color: transparent;
+			font-size: 0;
+			display: flex;
+			justify-content: flex-end;
+			padding: 16px;
+			padding-bottom: 0px;
+		}
+		.popup-cashier .popup-heading .close-btn {
+			width: 25px;
+			height: 25px;
+			background-image: url('wwwroot/images/m88/icon/__close-blue.svg');
+			position: static;
+			transform: none;
+		}
+		.popup-cashier .popup-heading .prev-btn {
+			width: 25px;
+			height: 25px;
+			background-image: url('wwwroot/images/m88/icon/Navigation_arrow_down_dark.svg');
+			position: absolute;
+			transform: none;
+			left: 15px;
+			top: 15px
+		}
+
+	.popup-cashier.bt-popup .popup-content {
+		padding: 0 16px 32px;
+	}
+	.popup-cashier .popup-content .bank-img img {
+		width:200px;
+		height: 40px;
+	}
+	.popup-cashier.bt-deposit-channel-popup .popup-content .row > .col {
+		width: 50%;
+	}
+	.popup-cashier.bt-deposit-channel-popup .popup-content .txt-1 {
+		font-size: 14px;
+		line-height: 19px;
+	}
+	.popup-cashier .popup-content .row > .col .box-btn p {
+		font-family: 'OpenSansBold';
+	}
+
+		.popup-cashier .popup-content .row > .col .box-btn{
+			/*width:164px;*/
+			height:128px;
+			line-height:128px;
+		}
+	.get-sms-icon {
+		height: 32px;
+		width: 32px;
+	}
+
+	h5.hdr-ismaskoff.header-mask.step2-desc {
+		padding-left:65px;
+	}
+}
+
+/**added css**/
+
+strong {
+    font-family: 'OpenSansBold';
+}
+
+.row:before, .row:after {
+    content:none;
+}
+
+.row {
+    margin:0px;
+}
+
+.dm-bank-link {
+    color: inherit !important;
+    text-decoration: inherit !important;
+}
+
+    .dm-bank-link:hover {
+        color: inherit !important;
+        text-decoration: inherit !important;
+    }
+
+
+a.box-btn span img {
+	height: 48px;
+	width: 48px;
+}
+
+.process-step i {
+	font-size: 20px;
+	line-height: 14px;
+}
+
+.popup-cashier.bt-popup.bt-ninepay-popup .popup-content .txt-1 {
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 16px;
+	color: #000000;
+}
+
+select option:hover {
+	background-color: red !important;
+}

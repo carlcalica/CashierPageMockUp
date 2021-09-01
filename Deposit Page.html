@@ -5,6 +5,18 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Deposit Page</title>
+
+      <link href="Deposit Page_files/css/bootstrap.css" rel="stylesheet">
+      <link href="Deposit Page_files/css/daterangepicker.css" rel="stylesheet">
+      <link href="Deposit Page_files/css/all.css" rel="stylesheet">
+      <link href="Deposit Page_files/css/fontawesome.css" rel="stylesheet">
+      <link href="Deposit Page_files/css/solid.min.css" rel="stylesheet">
+      <link href="Deposit Page_files/css/regular.min.css" rel="stylesheet">
+      <link href="Deposit Page_files/css/bootstrap-datetimepicker.css" rel="stylesheet">
+      <link href="Deposit Page_files/css/style.css" rel="stylesheet">
+      <link href="Deposit Page_files/css/components.css" rel="stylesheet">
+      <link href="Deposit Page_files/css/media-query.css" rel="stylesheet">
+      <link href="Deposit Page_files/css/select2.min.css" rel="stylesheet">
 </head>
    <body id="changeFontBody" class="lang-en" style="background-color:#eaeaea">
       <div id="changeFontDIV" class="container-fluid lang-en">
@@ -14,7 +26,8 @@
                   <meta name="viewport" content="width=device-width">
                   <title>Cashier Page</title>
                   <link href="./Deposit Page_files/iframe.css" rel="stylesheet">
-                 
+                  <style>.buttons__action button{align-items:center;border-radius:2px;width:100%;min-width:initial;background-color:#7e97cf;border-radius:0;height:40px;padding:0 8px;font-family:'AvantGarde';font-weight:100;text-transform:uppercase;color:#fff;border:none}.buttons__action button:hover{background-color:#4369ba}.buttons__action .col-md-2.col-sm-2.col-xs-4{padding:2px}#changeFontDIV .row{margin:0}</style>
+                  <style>div #framediv{margin-top:10px;margin-bottom:10px}</style>
                   <div class="container-fluid">
                      <div id="framediv">
                         <div class="frame-container">
@@ -22,6 +35,7 @@
                         </div>
                      </div>
                   </div>
+                  <script>function openSelfCorrection(){console.log("open self correction in iframe");var n=document.getElementById("deposit-iframe");n.setAttribute("src","/testsc")}function openSoB(){console.log("open submit on behalf in iframe");var n=document.getElementById("deposit-iframe");n.setAttribute("src","/testsob")}function openWithdrawal(){console.log("open withdrawal in iframe");var n=document.getElementById("deposit-iframe");n.setAttribute("src","/testwithdrawal")}function returnToTest(){window.location="/iframe"}function setStatusToSuccess(){setStatus(4)}function setStatusToFailed(){setStatus(2)}function setStatusToPending(){setStatus(1)}function setStatus(n){var t="/home/updateTxnStatus?status="+n.toString();$.ajax({url:t,type:"GET",success:function(n){console.log({updateResult:n})},error:function(n){console.log("Error "+n.toString())}})}</script>
                </div>
             </div>
          </div>

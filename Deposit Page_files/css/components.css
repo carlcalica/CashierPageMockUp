@@ -56,21 +56,13 @@ Please make it readable and keep it consistent.
 @font-face {
    font-family: 'OpenSansBold';
    src: url('././fonts/OpenSansBold.eot');
-   src: url('././fonts/OpenSansBold.eot') format('embedded-opentype'), 
-   url('././fonts/OpenSansBold.woff2') format('woff2'), 
-   url('././fonts/OpenSansBold.woff') format('woff'), 
-   url('././fonts/OpenSansBold.ttf') format('truetype'), 
-   url('././fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+   src: url('././fonts/OpenSansBold.eot') format('embedded-opentype'), url('././fonts/OpenSansBold.woff2') format('woff2'), url('././fonts/OpenSansBold.woff') format('woff'), url('././fonts/OpenSansBold.ttf') format('truetype'), url('././fonts/OpenSansBold.svg#OpenSansBold') format('svg');
 }
 
 @font-face {
    font-family: 'OpenSansRegular';
    src: url('././fonts/OpenSansRegular.eot');
-   src: url('././fonts/OpenSansRegular.eot') format('embedded-opentype'), 
-   url('././fonts/OpenSansRegular.woff2') format('woff2'), 
-   url('././fonts/OpenSansRegular.woff') format('woff'), 
-   url('././fonts/OpenSansRegular.ttf') format('truetype'), 
-   url('././fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+   src: url('././fonts/OpenSansRegular.eot') format('embedded-opentype'), url('././fonts/OpenSansRegular.woff2') format('woff2'), url('././fonts/OpenSansRegular.woff') format('woff'), url('././fonts/OpenSansRegular.ttf') format('truetype'), url('././fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
 }
 
 /****** fonts size *********/

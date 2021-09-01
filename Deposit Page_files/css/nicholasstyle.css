@@ -1,58 +1,42 @@
 /*font face*/
-/*@font-face {
+@font-face {
   font-family: 'OpenSans';
-     src: url("./Deposit Page_files/fonts/OpenSansBold.eot");
-     src: url('./Deposit Page_files/fonts/OpenSansBold.eot?#iefix') format('embedded-opentype'),
-          url('./Deposit Page_files/fonts/OpenSansBold.woff') format('woff'),
-          url('./Deposit Page_files/fonts/OpenSansBold.woff2') format('woff2'),
-          url('./Deposit Page_files/fonts/OpenSansBold.ttf') format('truetype'),
-          url('./Deposit Page_files/fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+     src: url('OpenSansBold.eot');
+     src: url('OpenSansBold.eot?#iefix') format('embedded-opentype'),
+          url('OpenSansBold.woff') format('woff'),
+          url('OpenSansBold.woff2') format('woff2'),
+          url('OpenSansBold.ttf') format('truetype'),
+          url('OpenSansBold.svg#OpenSansBold') format('svg');
   font-style: bold;
 }
 
 @font-face {
   font-family: 'OpenSans';
-     src: url('./Deposit Page_files/fonts/OpenSansRegular.eot');
-     src: url('./Deposit Page_files/fonts/OpenSansRegular.eot?#iefix') format('embedded-opentype'),
-          url('./Deposit Page_files/fonts/OpenSansRegular.woff') format('woff'),
-          url('./Deposit Page_files/fonts/OpenSansRegular.woff2') format('woff2'),
-          url('./Deposit Page_files/fonts/OpenSansRegular.ttf') format('truetype'),
-          url('./Deposit Page_files/fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+     src: url('OpenSansRegular.eot');
+     src: url('OpenSansRegular.eot?#iefix') format('embedded-opentype'),
+          url('OpenSansRegular.woff') format('woff'),
+          url('OpenSansRegular.woff2') format('woff2'),
+          url('OpenSansRegular.ttf') format('truetype'),
+          url('OpenSansRegular.svg#OpenSansRegular') format('svg');
   font-style: bold;
-}*/
-
-@font-face {
-   font-family: 'OpenSansBold';
-   src: url('./fonts/OpenSansBold.eot');
-   src: url('./fonts/OpenSansBold.eot') format('embedded-opentype'), 
-   url('./fonts/OpenSansBold.woff2') format('woff2'), 
-   url('./fonts/OpenSansBold.woff') format('woff'), 
-   url('../fonts/OpenSansBold.ttf') format('truetype'), 
-   url('./fonts/OpenSansBold.svg#OpenSansBold') format('svg');
-}
-
-@font-face {
-   font-family: 'OpenSansRegular';
-   src: url('./fonts/OpenSansRegular.eot');
-   src: url('./fonts/OpenSansRegular.eot') format('embedded-opentype'), 
-   url('./fonts/OpenSansRegular.woff2') format('woff2'), 
-   url('./fonts/OpenSansRegular.woff') format('woff'), 
-   url('./fonts/OpenSansRegular.ttf') format('truetype'), 
-   url('./fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
 }
 
 /*main box*/
 .MainBox {
+    width: 674px;
+    height: 754px;
     margin: 0px;
     padding: 24px 30px 32px 24px;
- }
+    border: solid 1px #d2e3ec;
+    background-color: var(--white); 
+}
 
 /*select deposit method*/
 .Select-deposit-method {
     width: 183px;
     height: 22px;
     margin: 0 445px 24px 0;
-    font-family: 'OpenSansRegular' 'San-serif';
+    font-family: OpenSans;
     font-size: 16px;
     font-weight: bold;
     font-stretch: normal;
@@ -151,7 +135,7 @@
   height: 19px;
   flex-grow: 0;
   margin: 4px 8px 7px;
-  font-family: 'OpenSansRegular' 'San-serif';
+  font-family: OpenSans;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -166,7 +150,7 @@
   height: 20px;
   flex-grow: 0;
   margin: 4px 0 0;
-  font-family: 'OpenSansRegular' 'San-serif';
+  font-family: OpenSans;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -422,7 +406,7 @@ img.tagsRecommended {
 #instantdeposit, #tenminutes{
   height: 16px;
   flex-grow: 0;
-  font-family: 'OpenSansRegular' 'San-serif';
+  font-family: OpenSans;
   font-size: 10px;
   font-weight: normal;
   font-stretch: normal;
@@ -477,7 +461,7 @@ img.tagsRecommended {
   align-self: center;
   flex-grow: 0;
   margin: 4px 16.4px 4px 15.6px;
-  font-family: 'OpenSansRegular' 'San-serif';
+  font-family: OpenSans;
   font-size: 8px;
   font-weight: normal;
   font-stretch: normal;
@@ -491,7 +475,7 @@ img.tagsRecommended {
   height: 13px;
   align-self: center;
   flex-grow: 0;
-  font-family: 'OpenSansRegular' 'San-serif';
+  font-family: OpenSans;
   font-size: 8px;
   font-weight: normal;
   font-stretch: normal;
@@ -517,7 +501,7 @@ img.tagsRecommended {
   height: 13px;
   align-self: center;
   flex-grow: 0;
-  font-family: 'OpenSansRegular' 'San-serif';
+  font-family: OpenSans;
   font-size: 8px;
   font-weight: normal;
   font-stretch: normal;
@@ -575,7 +559,7 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
     height: 36px;
     align-self: center;
     flex-grow: 0;
-    font-family: 'OpenSansRegular' 'San-serif';
+    font-family: OpenSans;
     font-size: 12px;
     font-weight: bold;
     font-stretch: normal;
@@ -604,7 +588,7 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
   width: 116px;
   height: 36px;
   flex-grow: 0;
-  font-family: 'OpenSansRegular' 'San-serif';
+  font-family: OpenSans;
   font-size: 12px;
   font-weight: bold;
   font-stretch: normal;
@@ -639,7 +623,7 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
     .Select-deposit-method {
       width: 160px;
       height: 19px;
-      font-family: 'OpenSansRegular' 'San-serif';
+      font-family: OpenSans;
       font-size: 14px;
       font-weight: bold;
       font-stretch: normal;
@@ -743,7 +727,7 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
       height: 16px;
       flex-grow: 0;
       margin: 4px 6.8px 8px 9.3px;
-      font-family: 'OpenSansRegular' 'San-serif';
+      font-family: OpenSans;
       font-size: 12px;
       font-weight: bold;
       font-stretch: normal;
@@ -759,7 +743,7 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
       height: 18px;
       flex-grow: 0;
       margin: 4px 0 0;
-      font-family: 'OpenSansRegular' 'San-serif';
+      font-family: OpenSans;
       font-size: 12px;
       font-weight: normal;
       font-stretch: normal;
@@ -998,7 +982,7 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
       align-self: center;
       flex-grow: 0;
       margin: 4px 5.8px 6px 6.3px;
-      font-family: 'OpenSansRegular' 'San-serif';
+      font-family: OpenSans;
       font-size: 8px;
       font-weight: normal;
       font-stretch: normal;
@@ -1014,7 +998,7 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
       height: 12px;
       align-self: center;
       flex-grow: 0;
-      font-family: 'OpenSansRegular' 'San-serif';
+      font-family: OpenSans;
       font-size: 8px;
       font-weight: normal;
       font-stretch: normal;
@@ -1037,7 +1021,7 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
       width: 88px;
       align-self: center;
       flex-grow: 0;
-      font-family: 'OpenSansRegular' 'San-serif';
+      font-family: OpenSans;
       font-size: 8px;
       font-weight: normal;
       font-stretch: normal;
@@ -1064,7 +1048,7 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
       height: 36px;
       align-self: center;
       flex-grow: 0;
-      font-family: 'OpenSansRegular' 'San-serif';
+      font-family: OpenSans;
       font-size: 12px;
       font-weight: bold;
       font-stretch: normal;

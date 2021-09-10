@@ -1,11 +1,9 @@
-
-
 /*main box*/
 .MainBox {
     width: 674px;
     height: 754px;
     margin: 0px;
-    padding: 24px 23px 32px 25px;
+    padding: 32px 23px 32px 25px;
     border: solid 1px #d2e3ec;
     background-color: var(--white); 
 }
@@ -14,7 +12,7 @@
 .Select-deposit-method {
     width: 183px;
     height: 22px;
-    margin: 0 445px 24px 0;
+    margin: 0 445px 0px 0;
     font-family: "OpenSans-Bold", sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -26,36 +24,96 @@
     color: #000;
 }
 
-.SelDepositMethodBox {
-    height: 56px;
-    align-self: center;
-    flex-grow: 0;
-    background-color: var(--white);
+.SelDepositMethodBoxFrame {
+  width: 561.8px;
+  height: 62.6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin: 17.4px 66.2px 17px 0;
+  padding: 0;
+  position:relative;
+  overflow:hidden;
+
 }
+
+
+
+.list {
+  position:absolute;
+  width: 562.8px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0px 16px;
+  padding: 0;
+  /*background-color: blue;*/
+}
+
+.scroller {
+  text-align:center;
+  cursor:pointer;
+  display:none;
+  padding:7px;
+  padding-top:11px;
+  margin-top: -65px;
+  margin-bottom:0px;
+  white-space:no-wrap;
+  vertical-align:middle;
+  background-color:#fff;
+}
+  
+.scroller-right{
+  float:right;
+}
+  
+.scroller-left {
+  float:left;
+}
+
+.SelDepositMethodBox{
+  height: 56px;
+  align-self: center;
+  flex-grow: 0;
+  background-color: var(--white);
+
+  position:relative;
+  cursor:grab;
+  cursor:-webkit-grab;
+}
+
 
 #SelDepositMethodBox-a{
   width: 110px;
-  margin: 0 8px 0 0;
+  margin: 0 0px 0 -8px;
 }
 
 #SelDepositMethodBox-b{
   width: 108px;
-  padding: 0 8px 8px;
+  padding: 0 8px 0px;
+  margin-right: 0.3px;
 }
 
 #SelDepositMethodBox-c{
   width: 113px;
   padding: 0 8px 8px;
+  margin-right: 0.3px;
 }
 
 #SelDepositMethodBox-d{
   width: 115px;
   padding: 0 8px 8px;
+  margin-right: 0.3px;
 }
 
 #SelDepositMethodBox-e{
   width: 83px;
-  margin: 0 0 0 8px;
+  margin: 0 0 0 0px;
   padding: 0 8px 8px;
 }
 
@@ -89,24 +147,43 @@
 }
 
 .YellowBox {
-  width: 110px;
   height: 2px;
   align-self: center;
   flex-grow: 0;
-  margin: 7px 0 0;
   background-color: #ffcd00;
 }
 
-.SelDepositMethodBoxFrame {
-  width: 561.8px;
-  height: 56px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-  margin: 24px 66.2px 16px 0;
-  padding: 0;
+#YellowBox1 {
+  width: 110px;
+  margin-top: 7px;
+}
+
+#YellowBox2 {
+  width: 108px;
+  margin-top: 6px;
+  margin-left:-8px;
+  display: none;
+}
+
+#YellowBox3 {
+  width: 113px;
+  margin-top: 6px;
+  margin-left:-8px;
+  display: none;
+}
+
+#YellowBox4 {
+  width: 115px;
+  margin-top: 6px;
+  margin-left:-8px;
+  display: none;
+}
+
+#YellowBox5 {
+  width: 83px;
+  margin-top: 6px;
+  margin-left:-8px;
+  display: none;
 }
 
 .Most-Popular {
@@ -194,6 +271,61 @@ img.tagsRecommended {
   background-color: #f5f5f5;
 }
 
+#POB-a{
+
+}
+
+#POB-b{
+  
+}
+
+#POB-c{
+  
+}
+
+#POB-d{
+  
+}
+
+#POB1{
+
+}
+
+#POB2{
+  
+}
+
+#POB3{
+
+}
+
+#POB4{
+  
+}
+
+#POB5{
+
+}
+
+#POB6{
+  
+}
+
+#POB7{
+
+}
+
+#POB8{
+  
+}
+
+#POB9{
+
+}
+
+#POB10{
+  
+}
 #PaymentOptBox-a{
   height: 132px;
   margin: 8px 11.033px 8px 0.55px;
@@ -590,6 +722,16 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
   transform: translate(-50%, -50%);
 }
 
+.print {
+	margin: auto;
+	max-width: 500px;
+}
+
+span.print{
+  display: inline-block;
+  width: 100px;
+}
+
   @media only screen and (max-width: 575px) {
     /*main box*/
     .MainBox {
@@ -616,40 +758,100 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
       color: #000;
     }
 
-    .SelDepositMethodBox {
+    .SelDepositMethodBoxFrame {
+      width: 358px;
       height: 64px;
-      align-self: center;
-      flex-grow: 0;
-      background-color: var(--white);
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+      margin: 24px 0px 24px 0px;
+      padding: 0;
+      overflow-x: auto;
+
 
     }
 
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .SelDepositMethodBoxFrame::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .SelDepositMethodBoxFrame {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    } 
+
+    .list {
+      position:absolute;
+      width: 567.8px;
+      height: 64px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+      margin: 0px 0px 0px -20px;
+      padding: 0;
+    }
+
+    .scroller {
+      text-align:center;
+      cursor:pointer;
+      display:none;
+      padding:7px;
+      padding-top:11x;
+      margin-top:-70px;
+      margin-bottom:0px;
+      white-space:no-wrap;
+      vertical-align:middle;
+    }
+      
+    .scroller-right{
+      float:right;
+    }
+    
+    .scroller-left {
+      float:left;
+    }
+
+    .SelDepositMethodBox{
+      height: 64px;
+      align-self: center;
+      flex-grow: 0;
+      /*background-color: var(--white);*/
+    }
+
+
+
     #SelDepositMethodBox-a{
       width: 96px;
-      margin: 0 16px 0 0;
+      margin: 0px 0px 0px 0px;
     }
     
     #SelDepositMethodBox-b{
       width: 95px;
-      margin: 0 16px;
+      margin: 0px 0px 0px 0px;
       padding: 0 8px 10px;
     }
     
     #SelDepositMethodBox-c{
       width: 100px;
-      margin: 0 16px;
+      margin: 0 0px 0 0px;
       padding: 0 8px 10px;
     }
     
     #SelDepositMethodBox-d{
       width: 101px;
-      margin: 0 16px;
+      margin: 0 0px 0 0px;
       padding: 0 auto auto;
     }
     
     #SelDepositMethodBox-e{
       width: 73px;
-      margin: 0px auto auto 16px;
+      margin: 0px auto auto 0px;
       padding: 0 auto auto;
     }
 
@@ -680,37 +882,38 @@ img.paymentsFooter_QuickPay_PaymentMethod_Colored {
       margin: 0 auto auto;
     }
   
-    .SelDepositMethodBoxFrame {
-      width: 359px;
-      height: 64px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 16px;
-      margin: 11px 0 24px 16px;
-      padding: 0;
-      overflow-x: auto;
-    }
 
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .SelDepositMethodBoxFrame::-webkit-scrollbar {
-      display: none;
-    }
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .SelDepositMethodBoxFrame {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-    } 
 
     .YellowBox {
-      width: 96px;
       height: 4px;
       align-self: center;
       flex-grow: 0;
       margin: 8px 0 0;
       background-color: #ffcd00;
+    }
+
+    #YellowBox1 {
+      width: 96px;
+    }
+    
+    #YellowBox2 {
+      width: 95px;
+      display: none;
+    }
+    
+    #YellowBox3 {
+      width: 100px;
+      display: none;
+    }
+    
+    #YellowBox4 {
+      width: 101px;
+      display: none;
+    }
+    
+    #YellowBox5 {
+      width: 73px;
+      display: none;
     }
 
     .Most-Popular {

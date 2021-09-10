@@ -637,7 +637,6 @@ var myFunction = function() {
   var reAdjust = function(){
     if (($('.SelDepositMethodBoxFrame').outerWidth()) < widthOfList()) {
      $('.scroller-right').show();
-     alert('hati hati lho');
     }
     else {
      $('.scroller-right').hide();
@@ -685,13 +684,6 @@ var myFunction = function() {
     
                         });
   });    
-
-
-  $('#print-scrollbarwidth-size span').text(scrollBarWidths);
-  $('#print-widthoflist-size span').text(widthOfList);
-  $('#print-widthofhidden-size span').text(widthOfHidden);
-  $('#print-leftposition-size span').text(getLeftPosi);
-
 }
 
 if ($(window).width() <= 575) {

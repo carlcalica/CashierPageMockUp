@@ -759,7 +759,7 @@ span.print{
     }
 
     .SelDepositMethodBoxFrame {
-      width: 358px;
+      width: 343.2px;
       height: 64px;
       display: flex;
       flex-direction: row;
@@ -769,7 +769,6 @@ span.print{
       margin: 24px 0px 24px 0px;
       padding: 0;
       overflow-x: auto;
-
 
     }
 
@@ -786,7 +785,7 @@ span.print{
 
     .list {
       position:absolute;
-      width: 567.8px;
+      width: 562.8px;
       height: 64px;
       display: flex;
       flex-direction: row;

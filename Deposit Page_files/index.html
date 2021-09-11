@@ -59,7 +59,7 @@
         <div class="MainBox">
             <span class="Select-deposit-method" style="display: inline-block;">Select deposit method:</span>
             <div class="SelDepositMethodBoxFrame">
-                <ul class="nav nav-tabs list" id="myTab">
+                <ul class="nav list" id="myTab">
                  <li class="SelDepositMethodBox" onClick="S_POB()" id="SelDepositMethodBox-a">
                    <div class="Vector" id="Vector1">
                        <img src="images/icons/icon-caret-double-dark-up.svg"style="max-width: 100%;max-height: 100%;">
@@ -99,19 +99,6 @@
             </div>
             <div class="scroller scroller-left"><i class="glyphicon glyphicon-chevron-left"></i></div>
             <div class="scroller scroller-right"><i class="glyphicon glyphicon-chevron-right"></i></div>
-            <!--<div class="container">-->
-            <!--<div class="print" id="print-scrollbarwidth-size"><span></span>
-                   scrollbarwidth
-            </div>    
-            <div class="print" id="print-widthoflist-size"><span></span>
-                   widthoflist
-            </div>   
-            <div class="print" id="print-widthofhidden-size"><span></span>
-                   widthofhidden
-            </div>     
-            <div class="print" id="print-leftposition-size"><span></span>
-                   leftposition
-            </div>-->
             <div class="PaymentOptFrame">
                    <div class=" col-md-12 col-sm-12 col-12">
                       <div class="row no-gutters">
@@ -305,7 +292,6 @@
                       </div>
                    </div>
             </div>
-            <!--</div>-->
        </div>      
     </body>
 <script>
@@ -320,6 +306,16 @@ var display1 = function() {
     document.getElementById("POB8").style.display = "none";
     document.getElementById("POB9").style.display = "none";
     document.getElementById("POB10").style.display = "none";
+    document.getElementsByClassName('Most-Popular')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Bank-Transfer')[0].style.fontFamily = "OpenSans-Bold, sans-serif";
+    document.getElementsByClassName('Online-Deposit')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Mobile-Deposit')[0].style.fontFamily = "OpenSans-Regular, sans-serif";   
+    document.getElementsByClassName('Cash-Card')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Most-Popular')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Bank-Transfer')[0].style.fontWeight = "bold";
+    document.getElementsByClassName('Online-Deposit')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Mobile-Deposit')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Cash-Card')[0].style.fontWeight = "normal";
 
 }
 var display2 = function() {
@@ -334,6 +330,16 @@ var display2 = function() {
     document.getElementById("POB8").style.display = "inline";
     document.getElementById("POB9").style.display = "none";
     document.getElementById("POB10").style.display = "inline";
+    document.getElementsByClassName('Most-Popular')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Online-Deposit')[0].style.fontFamily = "OpenSans-Bold, sans-serif";
+    document.getElementsByClassName('Mobile-Deposit')[0].style.fontFamily = "OpenSans-Regular, sans-serif";   
+    document.getElementsByClassName('Bank-Transfer')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Cash-Card')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Most-Popular')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Online-Deposit')[0].style.fontWeight = "bold";
+    document.getElementsByClassName('Bank-Transfer')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Mobile-Deposit')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Cash-Card')[0].style.fontWeight = "normal";
 }
 var display3 = function() {
     document.getElementById("POB1").style.display = "none";
@@ -346,6 +352,16 @@ var display3 = function() {
     document.getElementById("POB8").style.display = "none";
     document.getElementById("POB9").style.display = "inline";
     document.getElementById("POB10").style.display = "none";
+    document.getElementsByClassName('Most-Popular')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Mobile-Deposit')[0].style.fontFamily = "OpenSans-Bold, sans-serif";
+    document.getElementsByClassName('Online-Deposit')[0].style.fontFamily = "OpenSans-Regular, sans-serif";   
+    document.getElementsByClassName('Bank-Transfer')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Cash-Card')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Most-Popular')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Mobile-Deposit')[0].style.fontWeight = "bold";
+    document.getElementsByClassName('Bank-Transfer')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Online-Deposit')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Cash-Card')[0].style.fontWeight = "normal";
 }
 var display4 = function() {
     document.getElementById("POB1").style.display = "none";
@@ -358,6 +374,16 @@ var display4 = function() {
     document.getElementById("POB8").style.display = "none";
     document.getElementById("POB9").style.display = "none";
     document.getElementById("POB10").style.display = "none";
+    document.getElementsByClassName('Most-Popular')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Cash-Card')[0].style.fontFamily = "OpenSans-Bold, sans-serif";
+    document.getElementsByClassName('Bank-Transfer')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Mobile-Deposit')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Online-Deposit')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Most-Popular')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Cash-Card')[0].style.fontWeight = "bold";
+    document.getElementsByClassName('Online-Deposit')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Mobile-Deposit')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Bank-Transfer')[0].style.fontWeight = "normal";
 }
 var display = function(){
     document.getElementById("POB1").style.display = "inline";
@@ -369,7 +395,17 @@ var display = function(){
     document.getElementById("POB7").style.display = "inline";
     document.getElementById("POB8").style.display = "inline";
     document.getElementById("POB9").style.display = "inline";
-    document.getElementById("POB10").style.display = "inline";  
+    document.getElementById("POB10").style.display = "inline";
+    document.getElementsByClassName('Most-Popular')[0].style.fontFamily = "OpenSans-Bold, sans-serif";
+    document.getElementsByClassName('Mobile-Deposit')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Online-Deposit')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Cash-Card')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Bank-Transfer')[0].style.fontFamily = "OpenSans-Regular, sans-serif";
+    document.getElementsByClassName('Most-Popular')[0].style.fontWeight = "bold";
+    document.getElementsByClassName('Cash-Card')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Online-Deposit')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Mobile-Deposit')[0].style.fontWeight = "normal";
+    document.getElementsByClassName('Bank-Transfer')[0].style.fontWeight = "normal";
 }
 
 var SDMB = null;
@@ -453,6 +489,26 @@ function hide(divId) {
 }
 function S_POB() {
     display();
+    var font = function(){
+     if ($(window).width() <= 575) {
+      document.getElementsByClassName('Most-Popular')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Bank-Transfer')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Online-Deposit')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Mobile-Deposit')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Cash-Card')[0].style.fontSize = "12px";
+     }
+     else{
+      document.getElementsByClassName('Most-Popular')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Bank-Transfer')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Online-Deposit')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Mobile-Deposit')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Cash-Card')[0].style.fontSize = "14px";
+     }
+    }
+    font();
+    $(window).resize(function() {
+     font();
+    });
     show('YellowBox1');
     hide('YellowBox2');
     hide('YellowBox3');
@@ -461,6 +517,26 @@ function S_POB() {
 }
 function S_POB_a() {
     display1();
+    var font = function(){
+     if ($(window).width() <= 575) {
+      document.getElementsByClassName('Most-Popular')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Bank-Transfer')[0].style.fontSize = "11px";
+      document.getElementsByClassName('Online-Deposit')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Mobile-Deposit')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Cash-Card')[0].style.fontSize = "12px";
+     }
+     else{
+      document.getElementsByClassName('Most-Popular')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Bank-Transfer')[0].style.fontSize = "13px";
+      document.getElementsByClassName('Online-Deposit')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Mobile-Deposit')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Cash-Card')[0].style.fontSize = "14px";
+     }
+    }
+    font();
+    $(window).resize(function() {
+     font();
+    });
     show('YellowBox2');
     hide('YellowBox1');
     hide('YellowBox3');
@@ -469,6 +545,26 @@ function S_POB_a() {
 }
 function S_POB_b() {
     display2();
+    var font = function(){
+     if ($(window).width() <= 575) {
+      document.getElementsByClassName('Most-Popular')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Bank-Transfer')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Online-Deposit')[0].style.fontSize = "11px";
+      document.getElementsByClassName('Mobile-Deposit')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Cash-Card')[0].style.fontSize = "12px";
+     }
+     else{
+      document.getElementsByClassName('Most-Popular')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Bank-Transfer')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Online-Deposit')[0].style.fontSize = "13px";
+      document.getElementsByClassName('Mobile-Deposit')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Cash-Card')[0].style.fontSize = "14px";
+     }
+    }
+    font();
+    $(window).resize(function() {
+     font();
+    });
     show('YellowBox3');
     hide('YellowBox2');
     hide('YellowBox1');
@@ -477,6 +573,26 @@ function S_POB_b() {
 }
 function S_POB_c() {
     display3();
+    var font = function(){
+     if ($(window).width() <= 575) {
+      document.getElementsByClassName('Most-Popular')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Bank-Transfer')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Online-Deposit')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Mobile-Deposit')[0].style.fontSize = "11px";
+      document.getElementsByClassName('Cash-Card')[0].style.fontSize = "12px";
+     }
+     else{
+      document.getElementsByClassName('Most-Popular')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Bank-Transfer')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Online-Deposit')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Mobile-Deposit')[0].style.fontSize = "13px";
+      document.getElementsByClassName('Cash-Card')[0].style.fontSize = "14px";
+     }
+    }
+    font();
+    $(window).resize(function() {
+     font();
+    });
     show('YellowBox4');
     hide('YellowBox2');
     hide('YellowBox3');
@@ -485,6 +601,26 @@ function S_POB_c() {
 }
 function S_POB_d() {
     display4();
+    var font = function(){
+     if ($(window).width() <= 575) {
+      document.getElementsByClassName('Most-Popular')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Bank-Transfer')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Online-Deposit')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Mobile-Deposit')[0].style.fontSize = "12px";
+      document.getElementsByClassName('Cash-Card')[0].style.fontSize = "11px";
+     }
+     else{
+      document.getElementsByClassName('Most-Popular')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Bank-Transfer')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Online-Deposit')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Mobile-Deposit')[0].style.fontSize = "14px";
+      document.getElementsByClassName('Cash-Card')[0].style.fontSize = "13px";
+     }
+    }
+    font();
+    $(window).resize(function() {
+     font();
+    });
     show('YellowBox5');
     hide('YellowBox2');
     hide('YellowBox3');
@@ -493,126 +629,6 @@ function S_POB_d() {
 }
 
 var hidWidth;
-var scrollBarWidths = 10;
-/*var myFunction = function() {
-
-  /*if (x.matches) { // If media query matches
-    var scrollBarWidths = -285; 
-  } else {
-    var scrollBarWidths = -529; 
-  }*/
-  //var scrollBarWidths;
-  
-  /*if ($(window).width() <= 575) {
-   var scrollBarWidths = -285;
-  }
-  else {
-   var scrollBarWidths = -529;
-  }*/
-  
-
-   /*
-  var widthOfList = function(){
-   var itemsWidth = 0;
-   $('.SelDepositMethodBox').each(function(){
-    var itemWidth = $(this).outerWidth();
-    itemsWidth+=itemWidth;
-   });
-   return itemsWidth;
-  };
-
-  var widthOfHidden = function(){
-   return (($('.SelDepositMethodFrame').outerWidth())-widthOfList()-getLeftPosi())-scrollBarWidths;
-  };
-  
-  var getLeftPosi = function(){
-   return $('.list').position().left;
-  };
-
-  /*$(window).on('resize',function(){  
-    widthOfList()
-    getLeftPosi();
-    widthOfHidden();
-  });*/ //belum ngaruh woy!!!!
-    /*
-  var reAdjust = function(){
-    if (($('.SelDepositMethodFrame').outerWidth()) < widthOfList()) {
-     $('.scroller-right').show();
-    }
-    else {
-     $('.scroller-right').hide();
-    }
-      
-    if (getLeftPosi()<0) {
-     $('.scroller-left').show();
-    }
-    else {
-     $('.item').animate({left:"-="+getLeftPosi()+"px"},'slow');
-  	 $('.scroller-left').hide();
-    }
-  }
-
-  reAdjust();
-
-  $(window).on('resize',function(e){  
-  	reAdjust();
-  });
-
-  var scrollerright = $('.scroller-right').click(function() {
-  
-                        $('.scroller-left').fadeIn('slow');
-                        $('.scroller-right').fadeOut('slow');
-  
-                        $('.list').animate({left:"+="+widthOfHidden()+"px"},'slow',function(){
-
-                        });
-                      });
-       
-  var scrollerleft = $('.scroller-left').click(function() {
-  
-                        $('.scroller-right').fadeIn('slow');
-                        $('.scroller-left').fadeOut('slow');
-
-                        $('.list').animate({left:"-="+getLeftPosi()+"px"},'slow',function(){
-    
-                        });
-                      });    
-
-  $(window).on('resize',function(){  
-  	scrollerright();
-    scrollerleft();
-    alert('hk');
-  });
-
-
-
-  /*$(window).resize(function() {
-    $("#width").text($(this).width());
-    $("#height").text($(this).height());
-		document.getElementById("width").classList.remove("blue");	
-		document.getElementById("width").classList.remove("red");
-
-    if($(this).width() < 500){
-    	document.getElementById("width").classList.add("blue");
-    }
-    else{
-    	document.getElementById("width").classList.add("red");
-    }
-  });*/
-    /*
-  $('#print-scrollbarwidth-size span').text(scrollBarWidths);
-  $('#print-widthoflist-size span').text(widthOfList);
-  $('#print-widthofhidden-size span').text(widthOfHidden);
-  $('#print-leftposition-size span').text(getLeftPosi);
-
-}*/
-
-/*var x = window.matchMedia("(max-width: 575px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes */
-var hidWidth;
-
-
 var scrollBarWidths;
 
 
@@ -633,7 +649,7 @@ var myFunction = function() {
   var widthOfHidden = function(){
    return (($('.SelDepositMethodBoxFrame').outerWidth())-widthOfList()-getLeftPosi())-scrollBarWidths;
   };
-  
+
   var reAdjust = function(){
     if (($('.SelDepositMethodBoxFrame').outerWidth()) < widthOfList()) {
      $('.scroller-right').show();
@@ -652,9 +668,7 @@ var myFunction = function() {
      $('.scroller-left').hide();
     }
     else {
-     $('.item').animate({left:"-="+getLeftPosi()+"px"},'slow');
   	 $('.scroller-left').hide();
-
     }
   }
 
@@ -662,28 +676,28 @@ var myFunction = function() {
 
   $(window).on('resize',function(e){  
       	reAdjust();
-
   });
 
   $('.scroller-right').click(function() {
   
-                        $('.scroller-left').fadeIn('slow');
-                        $('.scroller-right').fadeOut('slow');
+        $('.scroller-left').fadeIn('slow');
+        $('.scroller-right').fadeOut('slow');
   
-                        $('.list').animate({left:"+="+widthOfHidden()+"px"},'slow',function(){
+        $('.list').animate({left:"-182px"},'slow',function(){
 
-                        });
+        });
   });
        
   $('.scroller-left').click(function() {
   
-                        $('.scroller-right').fadeIn('slow');
-                        $('.scroller-left').fadeOut('slow');
+        $('.scroller-right').fadeIn('slow');
+        $('.scroller-left').fadeOut('slow');
 
-                        $('.list').animate({left:"-="+getLeftPosi()+"px"},'slow',function(){
+        $('.list').animate({left:"0px"},'slow',function(){
     
-                        });
+        });
   });    
+
 }
 
 if ($(window).width() <= 575) {
@@ -695,8 +709,6 @@ else {
      myFunction();
 }
 
-
-
 $(window).on('resize',function(){  
     if ($(window).width() <= 575) {
      scrollBarWidths = 60;
@@ -707,23 +719,6 @@ $(window).on('resize',function(){
      myFunction();
     }
 });
-/*if ($(window).width() <= 575) {
-   var scrollBarWidths = -285;
-}
-else {
-   var scrollBarWidths = -529;
-}
-
-$(window).on('resize',function(){  
-  if ($(window).width() <= 575) {
-   var scrollBarWidths = -285;
-  }
-  else {
-   var scrollBarWidths = -529;
-  }  
-});
-/*var scrollBarWidths = -529
-var scrollBarWidths = -40;*/
 
 
 </script>

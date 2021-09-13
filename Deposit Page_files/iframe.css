@@ -37,6 +37,6 @@
 
     .inside-iframe {
         border: none;
-        border-top: thin solid #d3d3d3;
+        max-width: 340px;
     }
 }

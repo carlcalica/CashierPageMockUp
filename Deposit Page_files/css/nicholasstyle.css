@@ -252,12 +252,6 @@
   padding: 0;  
 }
 
-/*1st payment option*/
-.CardPayment-option {
-  width: 198.3px;
-  height: 140px;
-  flex-grow: 0;
-}
 
 img.tagsRecommended {
   width: 113px;
@@ -768,14 +762,14 @@ span.print{
     }
 
     .SelDepositMethodBoxFrame {
-      width: 308.2px;
+      width: 263.2px;
       height: 64px;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
       gap: 16px;
-      margin: 24px 0px 24px 0px;
+      margin: 24px 0px 24px 20px;
       padding: 0;
       overflow-x: auto;
 
@@ -983,14 +977,6 @@ span.print{
       gap: 16px;
       margin: 24px 4px 32px 3px;
       padding: 0;
-    }
-
-    /*1st payment option*/
-    .CardPayment-option {
-      width: 164px;
-      height: 134px;
-      flex-grow: 0;
-      padding: 6px 0px 0px;
     }
 
     img.tagsRecommended {

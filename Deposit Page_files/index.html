@@ -6,19 +6,25 @@
     <title>Home Page - Deposit</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+       
     <!-- CSS -->
-    <link rel="stylesheet" href="css/jquery.modal.min.css">
+       
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+       
     <link rel="stylesheet" href="css/nicholasstyle.css">
+       
     <!-- JS -->
+       
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.modal.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <style>
@@ -102,7 +108,7 @@ body{
                       <div class="row no-gutters">
                           <div class="col-md-4 col-sm-4 col-6 box-div" id="POB1">
 
-                                  <div class="PaymentOptBox POB-a" id="PaymentOptBox-a" onClick="QT()">
+                                  <div class="PaymentOptBox POB-a" id="PaymentOptBox-a">
                                          <img src="images/vendors/tags_Recommended.svg"class="tagsRecommended">
                                          <div class="InnerFrame1-a">
                                              <img src="images/vendors/logo-deposit-quicktransfer.svg" class="paymentsFooter_QuickTransferEN_PaymentMethod_Colo"> 
@@ -290,95 +296,9 @@ body{
                       </div>
                    </div>
             </div>
-        </div>   
-        <!-- The Modal -->
-
-
-        <div id="myModal" class="modal">
-         <!-- Modal content -->
-         <div class="header">
-            <span class="select">Select<img src="images/icons/icon-close-white.svg" class="close"></span>
-            
-         </div>
-         <div class="modal-content">
-          <!-- svg -->
-          <img src="images/icons/__close-blue.svg" class="close2">
-          <img src="images/vendors/logo-deposit-quicktransfer.svg"class="paymentsFooter_QuickTransferEN_PaymentMethod_Colo2">
-          <div class="row rowmodal1">
-                  <div class="I-want-to-make-a-new-bank-transfer">
-                      I want to make a new <br>bank transfer
-                  </div>
-
-                  <div class="I-have-already-made-the-bank-transfer">
-                      I have already made <br>the bank transfer
-                  </div>                  
-          </div>
-          <div class="row rowmodal1">
-            <div href="#myModal2" class="CNew open-modal">
-                <div class="mframe">
-                    <img src="images/icons/icon-list-create.svg"class="Old-Icon-Create-Form">
-                    <div class="Create-New">Create New</div>
-                </div>
-            </div>
-            <div href="#myModal2" class="Com open-modal">
-                <div class="mframe">
-                    <img src="images/icons/icon-list-complete.svg"class="Old-Icon-Complete-Form">
-                    <div class="Complete">Complete</div>
-                </div>
-            </div>                  
-          </div>
-          <div class="row rowmodal1">
-            <div class="Create-New-Deposit-Form">Create New Deposit Form</div>
-            <div class="Complete-Deposit-Form">Complete Deposit Form</div>
-          </div>
-         </div>
-        </div>   
-        <div id="myModal2" class="modal">
-            <img src="images/icons/icon-list-complete.svg"class="Old-Icon-Complete-Form">
-        </div>
+       </div>      
     </body>
 <script>
-$(document).ready(function () {
-        $("div.open-modal").click(function () {
-                $(this).modal({
-                    fadeDuration: 200,
-                    showClose: false
-                })
-                return false;
-        })
-})
-
-function QT(){
-    modal.style.display = "block";
-}
-
-// Get the modal
-var modal = document.getElementById("myModal");
-var modal2 = document.getElementById("myModal2");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-var span2 = document.getElementsByClassName("close2")[0];
-/* When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}*/
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-span2.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 var display1 = function() {
     document.getElementById("POB1").style.display = "inline";
     document.getElementById("POB2").style.display = "inline";

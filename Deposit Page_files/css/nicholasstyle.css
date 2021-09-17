@@ -326,10 +326,16 @@ img.tagsRecommended {
 #POB10{
   
 }
+
 #PaymentOptBox-a{
   height: 132px;
   margin: 8px 0px 8px;
   padding: 0px 0 0;
+}
+
+#PaymentOptBox-a:hover {
+  background-color:#98BDE0;
+  cursor: pointer;
 }
 
 #PaymentOptBox-b{
@@ -506,6 +512,18 @@ img.tagsRecommended {
   background-color: #bc1f00;
 }
 
+#DTB4,#DTB5{
+  margin-top: -1.5px;
+}
+
+#DTB6{
+  margin-top: 0px;
+}
+
+#DTB9{
+  margin-top: -1.5px;
+}
+
 .DepositTypeBox-d {
   padding: 1px 71.5px;
   background-color: #1e619f;
@@ -560,7 +578,7 @@ img.tagsRecommended {
   color: var(--white);
 }
 #cashcard {
-  width: 50px;
+  width: 51px;
   color: var(--white);
 }
 
@@ -597,14 +615,13 @@ img.tagsRecommended {
   display: block;
 }
 
-.paymentredtext2 {
-  width: 158px;
-  margin: 0px 24.8335px 8px;
+.paymentredtext2, .paymentredtext7 {
+  width: 160px;
+  margin: 0px 16.5px 8px;
 }
 
 .paymentredtext7 {
-  width: 152px;
-  margin: 0px 24.8335px 5.5px;
+  margin-bottom: 5.5px;
 }
 
 .paymentredtext4, .paymentredtext5, .paymentredtext6, .paymentredtext9{
@@ -621,6 +638,7 @@ img.tagsRecommended {
   letter-spacing: normal;
   text-align: center;
   color: #bc1f00;
+  display: inline;
 }
 .paymentredtext4, .paymentredtext5 {
   margin: 5.5px 52.5px 5.5px;
@@ -729,18 +747,18 @@ span.print{
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position: relative; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed; /* Stay in place */
   overflow: visible; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   width: 370px;
   height: 344px;
+  max-width: 600px;
   flex-grow: 0;
   margin: 158px 160.5px 260px;
   padding: 0px 0px 32px;
   background-color: var(--white);
-  
+  border-radius: 0%;
 }
 
 .header {
@@ -789,7 +807,7 @@ img.paymentsFooter_QuickTransferEN_PaymentMethod_Colo2 {
   width: 164px;
   height: 38px;
   flex-grow: 0;
-  margin: 24px 8px 16px 13.5px;
+  margin: 0px 8px 16px 13.5px;
   font-family: "OpenSans-Bold", sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -805,7 +823,7 @@ img.paymentsFooter_QuickTransferEN_PaymentMethod_Colo2 {
   width: 164px;
   height: 38px;
   flex-grow: 0;
-  margin: 24px 12.5px 16px 8px;
+  margin: 0px 12.5px 16px 8px;
   font-family: "OpenSans-Bold", sans-serif;
   font-size: 14px;
   font-weight: bold;
@@ -821,18 +839,18 @@ img.paymentsFooter_QuickTransferEN_PaymentMethod_Colo2 {
   width: 164px;
   height: 112px;
   flex-grow: 0;
-  margin: 16px 16px 8px 0;
+  margin: 0px 16px 8px 0;
   padding: 17.5px 8px;
   border-radius: 10px;
   background-color: #f5f5f5;
 }
 
 .CNew {
-  margin: 16px 8px 8px 13.5px;
+  margin: 0px 8px 8px 13.5px;
 }
 
 .Com{
-  margin: 16px 12.5px 8px 8px;
+  margin: 0px 12.5px 8px 8px;
 }
 
 .mframe{
@@ -891,10 +909,10 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
 }
 
 /* The Close Button */
-.close {
+.close1 {
   width: 20.7px;
   height: 20px;
-  margin: -20px 16px 11px 269.3px;
+  margin: -28px 16px 11px 317.3px;
   background-color: #1a2332;
 }
 
@@ -936,25 +954,163 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
 
 .modal2 {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
   overflow: visible; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  width: 700px;
+  width: 556px;
   height: 344px;
   flex-grow: 0;
   margin: 158px 60.5px 260px 74.5px;
-  padding: 88px 16px 16px;
-  background-color: burlywood;
+  padding: 0px 0px 0px;
+  background-color: var(--white);
+  border-radius: 0%;
 }
+
+.DCHeader {
+  width: 556px;
+  height: 40px;
+  flex-grow: 0;
+  /*padding: 12px 0px 12px 16px;*/
+  padding: 9px 8px 9px 16px;
+  background-color: #1a2332;
+}
+
+.Select-Deposit-Channel {
+  width: 141px;
+  height: 16px;
+  align-self: flex-start;
+  flex-grow: 0;
+  margin: 16px 399px 16px 16px;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+
+.DCFrame {
+  width: 540px;
+  height: 240px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 8px 16px;
+  padding: 0px;
+}
+
+.DChannel {
+  width: 164px;
+  height: 112px;
+  flex-grow: 0;
+  margin: 0 0px 0 0;
+  padding: 0px 8px 17.5px; 
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+
+.dcbox-div{ 
+  max-width: 164px !important;
+  margin: 8px 8px;
+}
+
+
+img.Old-Icon-Internet-Banking, img.Mobile-Deposit-2, img.Old-Icon-Counter-Banking,
+img.Old-Icon-ATM-Banking, img.Old-Icon-CTM-Banking {
+  width: 48px;
+  height: 48px;
+  align-self: center;
+  flex-grow: 0;
+  margin: 17.5px 45.65px 8px;
+  object-fit: contain;
+}
+
+.DCText {
+  width: 122px;
+  height: 21px;
+  flex-grow: 0;
+  margin: 0px 7.65px 0px;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.DCText2 {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-weight: normal;
+}
+
+.Deposit-Channel {
+  width: 132px;
+  height: 22px;
+  flex-grow: 0;
+  margin: 0 362.9px 0 8px;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--white);
+}
+
+img.Navigationarrow-down {
+  width: 9.1px;
+  height: 16px;
+  align-self: center;
+  flex-grow: 0;
+  margin: -3px 8px 0px -8px;
+  object-fit: contain;
+  background-color: #1a2332;
+}
+
+img.Navigationarrow-down2 {
+  display: none;
+}
+
+.CloseII {
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 1px 362.9px;
+  background-color: #1a2332;
+}
+
+.CloseII-2 {
+  display: none;
+}
+
+/*.modal-open{
+  padding-right:0 !important;
+}*/
+
+  /*@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    #PaymentOptBox-a{
+      background-color: #6a9436;
+    }
+  }*/
+
 
   @media only screen and (max-width: 575px) {
     /*main box*/
     .MainBox {
       width: 322px;
       height: 881px;
-      padding: 32px 10px 32px 10px; /*ujicoba*/
+      padding: 32px 10px 32px 10px; 
       border: 0px;
       margin:0px 0.334px 0px 0.333px;
       /*background-color: var(--white); */
@@ -1219,11 +1375,17 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
       flex-grow: 0;
       border-radius: 10px;
       background-color: #f2f2f2;
+
     }
     
     #PaymentOptBox-a{
       height: 128px;
       margin: 6px 0px 8px 0;
+    }
+
+    #PaymentOptBox-a:hover {
+      background-color:#98BDE0;
+      cursor: pointer;
     }
     
     #PaymentOptBox-b{
@@ -1334,18 +1496,48 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
     .DepositTypeBox-a {
       padding: 1px 32.225px;
       background-color: #6a9436;
+
     }
     
     .DepositTypeBox-b {
       padding: 1px 30.225px;
       background-color: #ffcd00;
+
     }
     
     .DepositTypeBox-c {
       padding: 1px 30.725px;
       background-color: #bc1f00;
+
     }
     
+    #DTB1{
+      margin-top: 0.5px;
+    }
+    #DTB2{
+      margin-top: -0.5px;
+    }
+
+    #DTB4{
+      margin-top: -1.5px;
+    }
+
+    #DTB5{
+      margin-top: -2px;
+    }
+    
+    #DTB6{
+      margin-top: -2px;
+    }
+
+    #DTB7{
+      margin-top: -0.5px;
+    }
+    
+    #DTB9{
+      margin-top: 2px;
+    }
+
     .DepositTypeBox-d {
       padding: 1px 42.275px;
       background-color: #1e619f;
@@ -1362,7 +1554,7 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
       flex-grow: 0;
       margin: 2px auto 4px;
       font-family: "OpenSans-Regular", sans-serif;
-      font-size: 7.6px;
+      font-size: 7px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -1416,12 +1608,12 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
 
     .paymentredtext4 {
       height: 13px;
-      margin: 3.5px auto 5.5px;
+      margin: 3.5px 23.725px 5.5px;
     }
 
     .paymentredtext5, .paymentredtext6, .paymentredtext9{
       height: 12px;
-      margin: 4px auto 6px;
+      margin: 4px 23.725px 6px;
     }
 
     /*depositlimittext*/
@@ -1461,39 +1653,53 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
 
     /* The Modal (background) */
     .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    width: 322px;
-    height: 680px;
-    flex-grow: 0;
-    margin: 185px 0px 0px;
-    padding: 0px 0px 32px;
-    background-color: var(--white);
-    border-radius: 0%;
+      display: none; /* Hidden by default */
+      position: absolute; /* Stay in place */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      width: 322px;
+      height: 375px;
+      flex-grow: 0;
+      margin: 506px 0px 0px;
+      padding: 0px 0px 0px;
+      background-color: var(--white);
+      border-top-left-radius: 3%;
+      border-top-right-radius: 3%;
+      border-bottom-left-radius: 0%;
+      border-bottom-right-radius: 0%;
+    }
+
+    .modal:before {
+      width: 64px;
+      height: 4px;
+      flex-grow: 0;
+      border-radius: 2px;
+      background-color: var(--white);
+      margin:-8px 125.5px 0px;
+      object-fit: contain;
+      display: inline-block;
+      position: absolute;
+      content: "";
     }
 
     .header {
-    display:none;
+      display:none;
     }
  
     .select {
-    width: 48px;
-    height: 22px;
-    flex-grow: 0;
-    margin: 0 269.3px 0 0;
-    font-family: OpenSans;
-    font-size: 16px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: var(--white);
+      width: 48px;
+      height: 22px;
+      flex-grow: 0;
+      margin: 0 269.3px 0 0;
+      font-family: "OpenSans-Bold", sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--white);
     }
 
     img.paymentsFooter_QuickTransferEN_PaymentMethod_Colo2 {
@@ -1501,13 +1707,12 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
     height: 40px;
     align-self: center;
     flex-grow: 0;
-    margin: 52px 87.5px 32px;
+    margin: 0px 61px 32px;
     object-fit: contain;
     }
 
     .mcol1{
       max-width:40%;
-      background-color: violet;
     }
 
     .rowmodal1{
@@ -1520,7 +1725,7 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
       width: 150px;
       height: 38px;
       flex-grow: 0;
-      margin: 32px 5px 16px 6px;
+      margin: 0px 5px 16px 6px;
       font-family: "OpenSans-Bold", sans-serif;
       font-size: 14px;
       font-weight: bold;
@@ -1536,7 +1741,7 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
       width: 150px;
       height: 38px;
       flex-grow: 0;
-      margin: 32px 6px 16px 5px;
+      margin: 0px 6px 16px 5px;
       font-family: "OpenSans-Bold", sans-serif;
       font-size: 14px;
       font-weight: bold;
@@ -1558,12 +1763,14 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
     }
 
     .CNew {
-      margin: 32px 5px 16px 6px;
+      margin: 0px 5px 16px 6px;
     }
 
     .Com{
-      margin: 32px 6px 16px 5px;
+      margin: 0px 6px 16px 5px;
     }
+
+
 
     .mframe{
       width: 135px;
@@ -1571,6 +1778,7 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
       flex-grow: 0;
       margin-left: 7.5px;
       margin-right: 7.5px;
+      position:relative;
     }
 
     .Create-New {
@@ -1640,7 +1848,7 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
       width: 150px;
       height: 18px;
       flex-grow: 0;
-      margin: 16px 5px 35px 6px;
+      margin: 0px 5px 35px 6px;
       font-family: "OpenSans-Regular", sans-serif;
       font-size: 12px;
       font-weight: normal;
@@ -1656,7 +1864,7 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
       width: 150px;
       height: 18px;
       flex-grow: 0;
-      margin: 16px 5px 35px 6px;
+      margin: 0px 5px 35px 6px;
       font-family: "OpenSans-Regular", sans-serif;
       font-size: 12px;
       font-weight: normal;
@@ -1673,6 +1881,140 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
       height: 24px;
       margin: 12px 15px 16px 282.1px;
       display:inline;
+    }
+    
+    .modal2 {
+      display: none; /* Hidden by default */
+      /*background-color: rgb(0,0,0); /* Fallback color */
+      /*background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      position:fixed;
+      width: 322px;
+      overflow-y: hidden;
+      height: 546px;
+      flex-grow: 0;
+      margin: 253px 0px 0px;
+      padding: 0px 0px 0px;
+      border-radius: 0%;
+      background-color: var(--white);
+      border-top-left-radius: 3%;
+      border-top-right-radius: 3%;
+      border-bottom-left-radius: 0%;
+      border-bottom-right-radius: 0%;
+      padding-right: 0px;
+    }
+    
+    .modal2:before {
+      width: 64px;
+      height: 4px;
+      flex-grow: 0;
+      border-radius: 2px;
+      background-color: var(--white);
+      margin:10px 125.5px -80px;
+      object-fit: contain;
+      display: inline;
+      position: absolute;
+      content: "";
+    }
+
+    .DCHeader {
+     display: none;
+    }
+    
+    .Select-Deposit-Channel {
+      width: 165px;
+      height: 19px;
+      flex-grow: 0;
+      margin: 16.5px 194px 24px 16px;
+      font-family: "OpenSans-Bold", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000;
+    }
+    
+    .DCFrame {
+      width: 315px;
+      height: 416px;
+      flex-grow: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
+      margin: 24px 3.5px 33px;
+      padding: 0;
+    }
+    
+    .DChannel {
+      width: 135.45px; 
+      height: 128px;
+      flex-grow: 0;
+      padding: 0px 0px 25.5px;
+      border-radius: 10px;
+      background-color: #f5f5f5;
+    }
+
+    .rowmodal2{
+      max-width: 524px;
+    }
+    
+    .dcbox-div{ 
+      max-width: 43% !important;
+      margin: 8px 11px;
+    }
+
+    img.Old-Icon-Internet-Banking, img.Mobile-Deposit-2, img.Old-Icon-Counter-Banking,
+    img.Old-Icon-ATM-Banking, img.Old-Icon-CTM-Banking {
+      width: 48px;
+      height: 48px;
+      align-self: center;
+      flex-grow: 0;
+      margin: 25.5px 43.725px 8px;
+      object-fit: contain;
+    }
+
+    .DCText {
+      width: 122px;
+      height: 21px;
+      flex-grow: 0;
+      margin: 0px 6.725px 0px;
+      font-family: "OpenSans-Bold", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000;
+    }
+
+    img.Navigationarrow-down2 {
+      width: 11.4px;
+      height: 20px;
+      align-self: center;
+      flex-grow: 0;
+      margin: 17.5px 296.9px 0px 16px;
+      object-fit: contain;
+      display: inline;
+      background-color: var(--white);
+    }
+
+    .CloseII-2 {
+      width: 24.9px;
+      height: 24px;
+      margin: -45.5px 15px -5px 283.7px;
+      display: inline;
+      background-color: var(--white);
+    }
+
+    .modal-open .modal {
+      overflow-x: hidden;
+      overflow-y: hidden;
     }
     
 

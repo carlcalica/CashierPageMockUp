@@ -905,7 +905,6 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
   background-color: #fefefe;
   padding: 0px;
   width: 100%;
-  border-radius: 0%;
 }
 
 /* The Close Button */
@@ -954,7 +953,7 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
 
 .modal2 {
   display: none; /* Hidden by default */
-  overflow: visible; /* Enable scroll if needed */
+  overflow: hidden; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   width: 556px;
@@ -962,8 +961,16 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
   flex-grow: 0;
   margin: 158px 60.5px 260px 74.5px;
   padding: 0px 0px 0px;
-  background-color: var(--white);
   border-radius: 0%;
+  padding-right: 0px;
+}
+
+.modal-content1{
+  height:344px;
+}
+
+.modal-content2{
+  height:100%;
 }
 
 .DCHeader {
@@ -1001,7 +1008,7 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
-  margin: 16px 8px 16px;
+  margin: 0px 8px 16px;
   padding: 0px;
 }
 
@@ -1015,12 +1022,10 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
   background-color: #f5f5f5;
 }
 
-
 .dcbox-div{ 
   max-width: 164px !important;
   margin: 8px 8px;
 }
-
 
 img.Old-Icon-Internet-Banking, img.Mobile-Deposit-2, img.Old-Icon-Counter-Banking,
 img.Old-Icon-ATM-Banking, img.Old-Icon-CTM-Banking {
@@ -1086,7 +1091,7 @@ img.Navigationarrow-down2 {
 .CloseII {
   width: 20px;
   height: 20px;
-  margin: 1px 0 1px 362.9px;
+  margin: -40px 0 1px 503.9px;
   background-color: #1a2332;
 }
 
@@ -1094,16 +1099,35 @@ img.Navigationarrow-down2 {
   display: none;
 }
 
-/*.modal-open{
-  padding-right:0 !important;
-}*/
+
+/* FOR MOZILLA */
+@-moz-document url-prefix() { 
+  .CloseII {
+    width: 20px;
+    height: 20px;
+    margin: 1px 0 1px 362.9px;
+    background-color: #1a2332;
+  }
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.modal{
+  padding-right:0px !important;
+}
 
   /*@media screen and (-webkit-min-device-pixel-ratio:0) { 
     #PaymentOptBox-a{
       background-color: #6a9436;
     }
   }*/
-
+  @media only screen and (min-width: 576px) {
+    .modal-content1,.modal-content2{
+      border-radius: 0%;
+    }
+  }  
 
   @media only screen and (max-width: 575px) {
     /*main box*/
@@ -1658,28 +1682,10 @@ img.Navigationarrow-down2 {
       background-color: rgb(0,0,0); /* Fallback color */
       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
       width: 322px;
-      height: 375px;
+      height: 383px;
       flex-grow: 0;
-      margin: 506px 0px 0px;
+      margin: 177px 0px 0px;
       padding: 0px 0px 0px;
-      background-color: var(--white);
-      border-top-left-radius: 3%;
-      border-top-right-radius: 3%;
-      border-bottom-left-radius: 0%;
-      border-bottom-right-radius: 0%;
-    }
-
-    .modal:before {
-      width: 64px;
-      height: 4px;
-      flex-grow: 0;
-      border-radius: 2px;
-      background-color: var(--white);
-      margin:-8px 125.5px 0px;
-      object-fit: contain;
-      display: inline-block;
-      position: absolute;
-      content: "";
     }
 
     .header {
@@ -1829,6 +1835,24 @@ img.Navigationarrow-down2 {
       width: 100%;
     }
 
+    .modal-content1{
+      height:375px;
+      margin-top:8px;
+    }
+
+    .modal-content1:before {
+      width: 64px;
+      height: 4px;
+      flex-grow: 0;
+      border-radius: 2px;
+      background-color: var(--white);
+      margin:-8px 129px 0px;
+      object-fit: contain;
+      display: inline;
+      position: absolute;
+      content: "";
+    }
+
     /* The Close Button */
     .close {
       color: var(--white);
@@ -1882,34 +1906,34 @@ img.Navigationarrow-down2 {
       margin: 12px 15px 16px 282.1px;
       display:inline;
     }
-    
+
     .modal2 {
       display: none; /* Hidden by default */
-      /*background-color: rgb(0,0,0); /* Fallback color */
-      /*background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
       position:fixed;
       width: 322px;
       overflow-y: hidden;
-      height: 546px;
+      height: 554px;
       flex-grow: 0;
-      margin: 253px 0px 0px;
+      margin: 6px 0px 0px;
       padding: 0px 0px 0px;
-      border-radius: 0%;
-      background-color: var(--white);
-      border-top-left-radius: 3%;
-      border-top-right-radius: 3%;
-      border-bottom-left-radius: 0%;
-      border-bottom-right-radius: 0%;
       padding-right: 0px;
     }
     
-    .modal2:before {
+
+    .modal-content2{
+      height:546px;
+      margin-top:8px;
+    }
+
+    .modal-content2:before {
       width: 64px;
       height: 4px;
       flex-grow: 0;
       border-radius: 2px;
       background-color: var(--white);
-      margin:10px 125.5px -80px;
+      margin:-8px 125.5px 0px;
       object-fit: contain;
       display: inline;
       position: absolute;
@@ -2007,16 +2031,10 @@ img.Navigationarrow-down2 {
     .CloseII-2 {
       width: 24.9px;
       height: 24px;
-      margin: -45.5px 15px -5px 283.7px;
+      margin: -20px 15px -5px 283.7px;
       display: inline;
       background-color: var(--white);
     }
-
-    .modal-open .modal {
-      overflow-x: hidden;
-      overflow-y: hidden;
-    }
-    
 
 }
   

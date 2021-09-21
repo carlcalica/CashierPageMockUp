@@ -783,7 +783,7 @@ var myFunction = function() {
   var getLeftPosi = function(){
    return $('.list').position().left;
   };
-
+ 
   var widthOfHidden = function(){
    return (($('.SelDepositMethodBoxFrame').outerWidth())-widthOfList()-getLeftPosi())-scrollBarWidths;
   };
@@ -797,19 +797,59 @@ var myFunction = function() {
 
     }
     
-    if ($(window).width() <= 599 && getLeftPosi()<0) {
-     $('.scroller-left').show();
+    var isChromium = window.chrome;
+    var winNav = window.navigator;
+    var vendorName = winNav.vendor;
+    var isOpera = typeof window.opr !== "undefined";
+    var isIEedge = winNav.userAgent.indexOf("Edge") > -1;
+    var isIOSChrome = winNav.userAgent.match("CriOS");
 
-    }
-    else if ($(window).width() > 599 && getLeftPosi()<0) {
-     $('.list').animate({left:"0px"},'slow');
-     $('.scroller-left').hide();
-    }
-    else {
-  	 $('.scroller-left').hide();
-    }
-  }
+    var testchrome = function() {
+     if (isIOSChrome) {
+        if ($(window).width() <= 599 && getLeftPosi()<-10) {
+          $('.scroller-left').show();
+        }
+        else if ($(window).width() > 599 && getLeftPosi()<0) {
+          $('.list').animate({left:"0px"},'fast');
+          $('.scroller-left').hide();
+        }
+        else {
+  	    $('.scroller-left').hide();
+        }
+     } else if(
+      isChromium !== null &&
+      typeof isChromium !== "undefined" &&
+      vendorName === "Google Inc." &&
+      isOpera === false &&
+      isIEedge === false
+     ) {
+        if ($(window).width() <= 599 && getLeftPosi()<-10) {
+          $('.scroller-left').show();
+        }
+        else if ($(window).width() > 599 && getLeftPosi()<0) {
+          $('.list').animate({left:"0px"},'fast');
+          $('.scroller-left').hide();
+        }
+        else {
+  	    $('.scroller-left').hide();
+        }
+     } else { 
+        if ($(window).width() <= 599 && getLeftPosi()<0) {
+          $('.scroller-left').show();
+        }
+        else if ($(window).width() > 599 && getLeftPosi()<0) {
+          $('.list').animate({left:"0px"},'fast');
+          $('.scroller-left').hide();
+        }
+        else {
+  	    $('.scroller-left').hide();
+        }
+     }    
+    };
 
+    testchrome();
+  };
+  
   reAdjust();
 
   $(window).on('resize',function(e){  
@@ -818,25 +858,27 @@ var myFunction = function() {
 
   $('.scroller-right').click(function() {
   
-        $('.scroller-left').fadeIn('slow');
-        $('.scroller-right').fadeOut('slow');
+        $('.scroller-left').fadeIn('fast');
+        $('.scroller-right').fadeOut('fast');
   
-        $('.list').animate({left:"-257px"},'slow',function(){
+        $('.list').animate({left:"-257px"},'fast',function(){
 
         });
   });
        
   $('.scroller-left').click(function() {
   
-        $('.scroller-right').fadeIn('slow');
-        $('.scroller-left').fadeOut('slow');
+        $('.scroller-right').fadeIn('fast');
+        $('.scroller-left').fadeOut('fast');
 
-        $('.list').animate({left:"0px"},'slow',function(){
+        $('.list').animate({left:"0px"},'fast',function(){
     
         });
   });    
 
 }
+
+
 
 if ($(window).width() <= 599) {
      scrollBarWidths = 60;

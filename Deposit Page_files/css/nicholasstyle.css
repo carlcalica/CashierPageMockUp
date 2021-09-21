@@ -845,6 +845,11 @@ img.paymentsFooter_QuickTransferEN_PaymentMethod_Colo2 {
   background-color: #f5f5f5;
 }
 
+.CNew:hover,.Com:hover  {
+  background-color:#E7E7E7;
+  cursor: pointer;
+}
+
 .CNew {
   margin: 0px 8px 8px 13.5px;
 }
@@ -864,15 +869,23 @@ img.paymentsFooter_QuickTransferEN_PaymentMethod_Colo2 {
   height: 21px;
   flex-grow: 0;
   margin: 8px 0px 17.5px;
-  font-family: "OpenSans-Bold", sans-serif;
+  font-family: "OpenSans-Regular", sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
   color: #000;
+}
+
+.CNew:hover .Create-New{
+  font-weight: bold;
+}
+
+.Com:hover .Complete{
+  font-weight: bold;
 }
 
 .Complete {
@@ -917,8 +930,6 @@ img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form  {
 
 .Create-New-Deposit-Form {
   width: 164px;
-  height: 18px;
-  flex-grow: 0;
   margin: 8px 8px 32px 13.5px;
   font-family: "OpenSans-Regular", sans-serif;
   font-size: 12px;
@@ -1790,34 +1801,14 @@ img.Navigationarrow-down2 {
 
     .Create-New {
       width: 135px;
-      height: 21px;
-      flex-grow: 0;
       margin: 8px 0px 25.5px;
-      font-family: "OpenSans-Bold", sans-serif;
       font-size: 14px;
-      font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      text-align: center;
-      color: #000;
     }
 
     .Complete {
       width: 135px;
-      height: 21px;
-      flex-grow: 0;
       margin: 8px 0px 17.5px;
-      font-family: "OpenSans-Regular", sans-serif;
       font-size: 14px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.4;
-      letter-spacing: normal;
-      text-align: center;
-      color: #000;
     }
 
     img.Old-Icon-Complete-Form,img.Old-Icon-Create-Form {
@@ -1871,34 +1862,12 @@ img.Navigationarrow-down2 {
 
     .Create-New-Deposit-Form {
       width: 150px;
-      height: 18px;
-      flex-grow: 0;
       margin: 0px 8px 35px 12px;
-      font-family: "OpenSans-Regular", sans-serif;
-      font-size: 12px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.5;
-      letter-spacing: normal;
-      text-align: center;
-      color: #000;
     }
 
     .Complete-Deposit-Form {
       width: 150px;
-      height: 18px;
-      flex-grow: 0;
       margin: 0px 12px 35px 8px;
-      font-family: "OpenSans-Regular", sans-serif;
-      font-size: 12px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.5;
-      letter-spacing: normal;
-      text-align: center;
-      color: #000;
     }
 
     .close2 {

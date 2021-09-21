@@ -334,7 +334,7 @@ img.tagsRecommended {
 }
 
 #PaymentOptBox-a:hover {
-  background-color:#98BDE0;
+  background-color:#E7E7E7;
   cursor: pointer;
 }
 
@@ -1118,6 +1118,11 @@ img.Navigationarrow-down2 {
   padding-right:0px !important;
 }
 
+.modal-backdrop{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
   /*@media screen and (-webkit-min-device-pixel-ratio:0) { 
     #PaymentOptBox-a{
       background-color: #6a9436;
@@ -1129,7 +1134,7 @@ img.Navigationarrow-down2 {
     }
   }  
 
-  @media only screen and (max-width: 575px) {
+  @media only screen and (max-width: 599px) {
     /*main box*/
     .MainBox {
       width: 322px;
@@ -1406,11 +1411,6 @@ img.Navigationarrow-down2 {
       height: 128px;
       margin: 6px 0px 8px 0;
     }
-
-    #PaymentOptBox-a:hover {
-      background-color:#98BDE0;
-      cursor: pointer;
-    }
     
     #PaymentOptBox-b{
       height: 128px;
@@ -1678,14 +1678,15 @@ img.Navigationarrow-down2 {
     /* The Modal (background) */
     .modal {
       display: none; /* Hidden by default */
-      position: absolute; /* Stay in place */
+      position: fixed; /* Stay in place */
       background-color: rgb(0,0,0); /* Fallback color */
       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-      width: 322px;
-      height: 383px;
+      width: 340px;
+      height: 800px;
       flex-grow: 0;
-      margin: 177px 0px 0px;
+      margin: 0px 0px 0px;
       padding: 0px 0px 0px;
+      overflow: hidden !important;
     }
 
     .header {
@@ -1713,7 +1714,7 @@ img.Navigationarrow-down2 {
     height: 40px;
     align-self: center;
     flex-grow: 0;
-    margin: 0px 61px 32px;
+    margin: 0px 70px 32px;
     object-fit: contain;
     }
 
@@ -1722,7 +1723,7 @@ img.Navigationarrow-down2 {
     }
 
     .rowmodal1{
-      width: 370px;
+      width: 340px;
       margin-left: 0px;
 
     }
@@ -1731,7 +1732,7 @@ img.Navigationarrow-down2 {
       width: 150px;
       height: 38px;
       flex-grow: 0;
-      margin: 0px 5px 16px 6px;
+      margin: 0px 8px 16px 12px;
       font-family: "OpenSans-Bold", sans-serif;
       font-size: 14px;
       font-weight: bold;
@@ -1747,7 +1748,7 @@ img.Navigationarrow-down2 {
       width: 150px;
       height: 38px;
       flex-grow: 0;
-      margin: 0px 6px 16px 5px;
+      margin: 0px 12px 16px 8px;
       font-family: "OpenSans-Bold", sans-serif;
       font-size: 14px;
       font-weight: bold;
@@ -1769,11 +1770,11 @@ img.Navigationarrow-down2 {
     }
 
     .CNew {
-      margin: 0px 5px 16px 6px;
+      margin: 0px 8px 16px 12px;
     }
 
     .Com{
-      margin: 0px 6px 16px 5px;
+      margin: 0px 12px 16px 8px;
     }
 
 
@@ -1837,7 +1838,7 @@ img.Navigationarrow-down2 {
 
     .modal-content1{
       height:375px;
-      margin-top:8px;
+      margin-top:425px;
     }
 
     .modal-content1:before {
@@ -1846,7 +1847,7 @@ img.Navigationarrow-down2 {
       flex-grow: 0;
       border-radius: 2px;
       background-color: var(--white);
-      margin:-8px 129px 0px;
+      margin:-8px 138px 0px;
       object-fit: contain;
       display: inline;
       position: absolute;
@@ -1872,7 +1873,7 @@ img.Navigationarrow-down2 {
       width: 150px;
       height: 18px;
       flex-grow: 0;
-      margin: 0px 5px 35px 6px;
+      margin: 0px 8px 35px 12px;
       font-family: "OpenSans-Regular", sans-serif;
       font-size: 12px;
       font-weight: normal;
@@ -1888,7 +1889,7 @@ img.Navigationarrow-down2 {
       width: 150px;
       height: 18px;
       flex-grow: 0;
-      margin: 0px 5px 35px 6px;
+      margin: 0px 12px 35px 8px;
       font-family: "OpenSans-Regular", sans-serif;
       font-size: 12px;
       font-weight: normal;
@@ -1903,7 +1904,7 @@ img.Navigationarrow-down2 {
     .close2 {
       width: 24.9px;
       height: 24px;
-      margin: 12px 15px 16px 282.1px;
+      margin: 12px 15px 16px 300.1px;
       display:inline;
     }
 
@@ -1912,11 +1913,11 @@ img.Navigationarrow-down2 {
       background-color: rgb(0,0,0); /* Fallback color */
       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
       position:fixed;
-      width: 322px;
+      width: 340px;
       overflow-y: hidden;
-      height: 554px;
+      height: 800px;
       flex-grow: 0;
-      margin: 6px 0px 0px;
+      margin: 0px 0px 0px;
       padding: 0px 0px 0px;
       padding-right: 0px;
     }
@@ -1924,7 +1925,7 @@ img.Navigationarrow-down2 {
 
     .modal-content2{
       height:546px;
-      margin-top:8px;
+      margin-top:254px;
     }
 
     .modal-content2:before {
@@ -1933,7 +1934,7 @@ img.Navigationarrow-down2 {
       flex-grow: 0;
       border-radius: 2px;
       background-color: var(--white);
-      margin:-8px 125.5px 0px;
+      margin:-8px 138px 0px;
       object-fit: contain;
       display: inline;
       position: absolute;
@@ -1948,7 +1949,7 @@ img.Navigationarrow-down2 {
       width: 165px;
       height: 19px;
       flex-grow: 0;
-      margin: 16.5px 194px 24px 16px;
+      margin: 16.5px 194px 0px 16px;
       font-family: "OpenSans-Bold", sans-serif;
       font-size: 14px;
       font-weight: bold;
@@ -1961,7 +1962,7 @@ img.Navigationarrow-down2 {
     }
     
     .DCFrame {
-      width: 315px;
+      width: 332px;
       height: 416px;
       flex-grow: 0;
       display: flex;
@@ -1969,12 +1970,12 @@ img.Navigationarrow-down2 {
       justify-content: flex-start;
       align-items: center;
       gap: 16px;
-      margin: 24px 3.5px 33px;
+      margin: 24px 4px 33px;
       padding: 0;
     }
     
     .DChannel {
-      width: 135.45px; 
+      width: 150px; 
       height: 128px;
       flex-grow: 0;
       padding: 0px 0px 25.5px;
@@ -1987,8 +1988,8 @@ img.Navigationarrow-down2 {
     }
     
     .dcbox-div{ 
-      max-width: 43% !important;
-      margin: 8px 11px;
+      max-width: 150px !important;
+      margin: 8px 8px;
     }
 
     img.Old-Icon-Internet-Banking, img.Mobile-Deposit-2, img.Old-Icon-Counter-Banking,
@@ -1997,7 +1998,7 @@ img.Navigationarrow-down2 {
       height: 48px;
       align-self: center;
       flex-grow: 0;
-      margin: 25.5px 43.725px 8px;
+      margin: 25.5px 51px 8px;
       object-fit: contain;
     }
 
@@ -2005,7 +2006,7 @@ img.Navigationarrow-down2 {
       width: 122px;
       height: 21px;
       flex-grow: 0;
-      margin: 0px 6.725px 0px;
+      margin: 0px 14px 0px;
       font-family: "OpenSans-Bold", sans-serif;
       font-size: 14px;
       font-weight: bold;
@@ -2022,7 +2023,7 @@ img.Navigationarrow-down2 {
       height: 20px;
       align-self: center;
       flex-grow: 0;
-      margin: 17.5px 296.9px 0px 16px;
+      margin: 17.5px 296.9px 0px -14px;
       object-fit: contain;
       display: inline;
       background-color: var(--white);
@@ -2031,7 +2032,7 @@ img.Navigationarrow-down2 {
     .CloseII-2 {
       width: 24.9px;
       height: 24px;
-      margin: -20px 15px -5px 283.7px;
+      margin: -22.5px 15px -5px 300.1px;
       display: inline;
       background-color: var(--white);
     }
